@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Home</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/","headline":"Home","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+  <body>
+    <nav>
+    
+        <a href="/" class="current">
+            Home
+        </a>
+    
+        <a href="/about.html" >
+            About
+        </a>
+    
+        <a href="/blog.html" >
+            Posts
+        </a>
+    
+        <a href="/staff.html" >
+            Staff
+        </a>
+    
+  </nav>
+    <h1>MICHELLE + GEOFF'S ROAD TRIP</h1>
+
+<div id="mapid" style="max-width: 900px; margin: 0 auto 1em; height: 600px"></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGVsbGVtaG8iLCJhIjoiY2l2MWM0cWthMDA3NDJ5b3g3cGF5d2huaiJ9.2otqgGYhjK7bBnAhrnyu5A';
+
+var map = new mapboxgl.Map({
+  container: 'mapid',
+  style: 'mapbox://styles/mapbox/streets-v9',
+  center: [-98.5556199,39.8097343],
+  zoom: 3
+});
+
+
+map.on('load', function () {
+ 
+ map.addLayer({
+ "id": "points",
+ "type": "symbol",
+ "source": {
+ "type": "geojson",
+ "data": {
+ "type": "FeatureCollection",
+ "features": [{
+ "type": "Feature",
+ "geometry": {
+ "type": "Point",
+ "coordinates": [-77.03238901390978, 38.913188059745586]
+ },
+ "properties": {
+ "title": "Mapbox DC",
+ "icon": "monument"
+ }
+ }, {
+ "type": "Feature",
+ "geometry": {
+ "type": "Point",
+ "coordinates": [-122.414, 37.776]
+ },
+ "properties": {
+ "title": "Mapbox SF",
+ "icon": "harbor"
+ }
+ }]
+ }
+ },
+ "layout": {
+ "icon-image": "{icon}-15",
+ "text-field": "{title}",
+ "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+ "text-offset": [0, 0.6],
+ "text-anchor": "top"
+ }
+ });
+ });
+// var featureLayer = L.mapbox.featureLayer()
+// 	.loadURL('/map/adventures.geojson')
+// 	.addTo(map);
+
+</script>
+  </body>
+</html>
