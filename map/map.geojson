@@ -8,8 +8,10 @@
 {
 "type": "Feature",
 "properties": {
+"description":"<a href='{{ place.url }}'><strong>{{ place.title }}</strong></a>",
+"icon": "car",
 "title": "{{ place.title }}",
-"url": "{{site.url}}{{place.url}}",
+"url": "{{site.url}}{{place.url}}"
 },
 "geometry": {
 "type": "Point",

@@ -40,7 +40,7 @@
     <h1>MICHELLE + GEOFF'S ROAD TRIP</h1>
 
 <div id="mapid" style="max-width: 900px; margin: 0 auto 1em; height: 600px"></div>
-
+<script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
 
@@ -57,49 +57,49 @@ var map = new mapboxgl.Map({
 
 
 map.on('load', function () {
- 
- map.addLayer({
- "id": "points",
- "type": "symbol",
- "source": {
- "type": "geojson",
- "data": {
- "type": "FeatureCollection",
- "features": [{
- "type": "Feature",
- "geometry": {
- "type": "Point",
- "coordinates": [-77.03238901390978, 38.913188059745586]
- },
- "properties": {
- "title": "Mapbox DC",
- "icon": "monument"
- }
- }, {
- "type": "Feature",
- "geometry": {
- "type": "Point",
- "coordinates": [-122.414, 37.776]
- },
- "properties": {
- "title": "Mapbox SF",
- "icon": "harbor"
- }
- }]
- }
- },
- "layout": {
- "icon-image": "{icon}-15",
- "text-field": "{title}",
- "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
- "text-offset": [0, 0.6],
- "text-anchor": "top"
- }
+	var url = '/map/map.geojson';
+	$.getJSON(url, function (geojson) {
+		map.addLayer({
+		"id": "places",
+		"type": "symbol",
+		"source": {"type":"geojson",
+			"data":geojson
+		},
+		"layout": {
+			"icon-image": "{icon}-15",
+			"icon-size": 2,
+			// "icon-color": '#e55252',
+			"icon-allow-overlap": true
+		// "text-field": "{title}",
+		// "text-size": 10,
+		// "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+		// "text-offset": [0, 0.6],
+		// "text-anchor": "top"
+		},
+	   "paint":{
+		"icon-color": '#e55252'
+	   }
+	  });
+	})
  });
- });
-// var featureLayer = L.mapbox.featureLayer()
-// 	.loadURL('/map/adventures.geojson')
-// 	.addTo(map);
+
+map.on('click', 'places', function (e) {
+	var coordinates = e.features[0].geometry.coordinates.slice();
+	var description = e.features[0].properties.description;
+	
+	// Ensure that if the map is zoomed out such that multiple
+	// copies of the feature are visible, the popup appears
+	// over the copy being pointed to.
+	while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+	coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+	}
+	
+	new mapboxgl.Popup()
+	.setLngLat(coordinates)
+	.setHTML(description)
+	.addTo(map);
+});
+
 
 </script>
   </body>
