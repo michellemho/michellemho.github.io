@@ -5,9 +5,17 @@ title: Home
 <h1>{{ "Michelle + Geoff's Road Trip" | upcase }}</h1>
 
 <div id="mapid" style="max-width: 900px; margin: 0 auto 1em; height: 600px"></div>
+<div id="loader">
+		<div class="CDB-LoaderIcon CDB-LoaderIcon--big">
+		  <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
+			<circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
+		  </svg>
+		</div>
+</div>
 <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+<script src="https://libs.cartocdn.com/carto-vl/v1.1.1/carto-vl.min.js"></script>
 
 <script>
 
@@ -15,55 +23,95 @@ mapboxgl.accessToken = '{{site.mapbox-token}}';
 
 var map = new mapboxgl.Map({
   container: 'mapid',
-  style: 'mapbox://styles/mapbox/streets-v9',
+  style: 'mapbox://styles/mapbox/bright-v9',
   center: [-98.5556199,39.8097343],
   zoom: 3
 });
-
-
-map.on('load', function () {
-	var url = '/map/map.geojson';
-	$.getJSON(url, function (geojson) {
-		map.addLayer({
-		"id": "places",
-		"type": "symbol",
-		"source": {"type":"geojson",
-			"data":geojson
-		},
-		"layout": {
-			"icon-image": "{icon}-15",
-			"icon-size": 2,
-			// "icon-color": '#e55252',
-			"icon-allow-overlap": true
-		// "text-field": "{title}",
-		// "text-size": 10,
-		// "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-		// "text-offset": [0, 0.6],
-		// "text-anchor": "top"
-		},
-	   "paint":{
-		"icon-color": '#e55252'
-	   }
-	  });
-	})
- });
-
-map.on('click', 'places', function (e) {
-	var coordinates = e.features[0].geometry.coordinates.slice();
-	var description = e.features[0].properties.description;
-	
-	// Ensure that if the map is zoomed out such that multiple
-	// copies of the feature are visible, the popup appears
-	// over the copy being pointed to.
-	while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-	coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-	}
-	
-	new mapboxgl.Popup()
-	.setLngLat(coordinates)
-	.setHTML(description)
-	.addTo(map);
+// Define pop-up
+const popup = new mapboxgl.Popup({
+	closeButton: false,
+	closeOnClick: false
 });
 
+var url = '/map/map.geojson';
+$.getJSON(url, function (geojson) {
+	const places = geojson;
+	const placesSource = new carto.source.GeoJSON(places);
+
+	const viz = new carto.Viz(`
+		@description: $description
+		color: #ff00c7
+		width: 20
+		symbol: marker
+		strokeWidth: 3
+		strokeColor: white
+	`);
+	
+	const places_layer = new carto.Layer('places_layer', placesSource, viz);
+	
+	places_layer.addTo(map);
+	places_layer.on('loaded', hideLoader);
+
+	const interactivity = new carto.Interactivity(places_layer);
+    const delay = 50;
+    let clickedFeatureId = null;
+    interactivity.on('featureEnter', event => {
+      event.features.forEach(feature => {
+        if (feature.id !== clickedFeatureId) {
+          feature.color.blendTo('opacity(DeepPink, 0.5)', delay)
+          feature.strokeWidth.blendTo('4', delay);
+          feature.strokeColor.blendTo('opacity(DeepPink, 0.8)', delay);
+        }
+      });
+    });
+    interactivity.on('featureLeave', event => {
+      event.features.forEach(feature => {
+        if (feature.id !== clickedFeatureId) {
+          feature.color.reset(delay);
+          feature.strokeWidth.reset(delay);
+          feature.strokeColor.reset(delay);
+        }
+      });
+    });
+    interactivity.on('featureClick', event => {
+      if (event.features.length) {
+        const feature = event.features[0];
+        clickedFeatureId = feature.id;
+        feature.color.blendTo('opacity(LimeGreen, 0.5)', delay)
+        feature.strokeWidth.blendTo('7', delay);
+        feature.strokeColor.blendTo('opacity(LimeGreen, 0.8)', delay);
+      }
+    });
+    interactivity.on('featureClickOut', event => {
+      if (event.features.length) {
+        const feature = event.features[0];
+        clickedFeatureId = '';
+        feature.color.reset(delay);
+        feature.strokeWidth.reset(delay);
+        feature.strokeColor.reset(delay);
+      }
+	});
+	
+	interactivity.on('featureClick', updatePopup);
+
+});
+function updatePopup(event) {
+      if (event.features.length > 0) {
+        const vars = event.features[0].variables;
+        popup.setHTML(`${vars.description.value}`);
+        popup.setLngLat([event.coordinates.lng, event.coordinates.lat]);
+        if (!popup.isOpen()) {
+          popup.addTo(map);
+        }
+      } else {
+        popup.remove();
+      }
+}
+
+
+
+function hideLoader() {
+      document.getElementById('loader').style.opacity = '0';
+    }
 
 </script>

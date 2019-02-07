@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/authors/geoff.html</loc>
-<lastmod>2019-02-07T15:10:16-05:00</lastmod>
+<lastmod>2019-02-07T15:50:32-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/michelle.html</loc>
-<lastmod>2019-02-07T15:10:16-05:00</lastmod>
+<lastmod>2019-02-07T15:50:32-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2019/02/06/firstpost.html</loc>
