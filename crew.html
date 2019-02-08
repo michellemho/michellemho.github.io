@@ -2,13 +2,11 @@
 layout: default
 title: Authors
 ---
-<h1>Authors</h1>
+<h1>The Crew</h1>
 
-<ul>
+<div class='post-div'>
   {% for author in site.authors %}
-    <li>
       <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
       <p>{{ author.content | markdownify }}</p>
-    </li>
   {% endfor %}
-</ul>
+</div>

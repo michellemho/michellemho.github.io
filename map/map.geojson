@@ -8,6 +8,8 @@
 {
 "type": "Feature",
 "properties": {
+"date": "{{ place.date | date_to_string }}",
+"color": {% if place.tags contains 'upcoming' %}"#9b59b6"{% else %}"#4F518C"{% endif %},
 "description":"<a href='{{ place.url }}'><strong>{{ place.title }}</strong></a>",
 "icon": "car",
 "title": "{{ place.title }}",

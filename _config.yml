@@ -1,6 +1,9 @@
 collections:
   authors:
     output: true
+  tags:
+    output: true
+future: true
 
 defaults:
   - scope:

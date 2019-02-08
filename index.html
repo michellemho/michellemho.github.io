@@ -4,7 +4,7 @@ title: Home
 ---
 <h1>{{ "Michelle + Geoff's Road Trip" | upcase }}</h1>
 
-<div id="mapid" style="max-width: 900px; margin: 0 auto 1em; height: 600px"></div>
+<div id="mapid" style="width: 100%; margin: 0 auto 1em; height: 600px"></div>
 <div id="loader">
 		<div class="CDB-LoaderIcon CDB-LoaderIcon--big">
 		  <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
@@ -16,7 +16,7 @@ title: Home
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
 <script src="https://libs.cartocdn.com/carto-vl/v1.1.1/carto-vl.min.js"></script>
-
+<link href="https://carto.com/developers/carto-vl/v0.10.0/examples/maps/style.css" rel="stylesheet">
 <script>
 
 mapboxgl.accessToken = '{{site.mapbox-token}}';
@@ -25,7 +25,7 @@ var map = new mapboxgl.Map({
   container: 'mapid',
   style: 'mapbox://styles/mapbox/bright-v9',
   center: [-98.5556199,39.8097343],
-  zoom: 3
+  zoom: 3.6
 });
 // Define pop-up
 const popup = new mapboxgl.Popup({
@@ -40,7 +40,7 @@ $.getJSON(url, function (geojson) {
 
 	const viz = new carto.Viz(`
 		@description: $description
-		color: #ff00c7
+    color: ramp($color, vivid)
 		width: 20
 		symbol: marker
 		strokeWidth: 3

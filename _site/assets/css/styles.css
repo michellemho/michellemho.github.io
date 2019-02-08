@@ -1,2 +1,29 @@
 .current {
   color: green; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  margin: 1px; }
+
+body {
+  font-family: 'Nunito', sans-serif; }
+
+nav li {
+  display: inline;
+  align-items: center;
+  margin: auto;
+  font-size: 16pt; }
+
+.container {
+  display: flex; }
+
+.post-div {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  font-size: 16pt; }
+
+.small {
+  font-size: 12pt; }

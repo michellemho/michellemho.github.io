@@ -4,11 +4,12 @@ title: Blog
 ---
 <h1>Latest Posts</h1>
 
-<ul>
+<ul class="post-div">
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
+  {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+  {% if posttime < nowunix %}
+    {% include post-desc.html post=post %}
+  {% endif %}
   {% endfor %}
 </ul>

@@ -6,10 +6,76 @@
 {
 "type": "Feature",
 "properties": {
-"description":"<a href='/2019/02/07/philly.html'><strong>Friends in Philadelphia</strong></a>",
+"date": "22 Feb 2019",
+"color": "#9b59b6",
+"description":"<a href='/2019/02/22/denver.html'><strong>Getting High in Denver</strong></a>",
+"icon": "car",
+"title": "Getting High in Denver",
+"url": "http://localhost:4000/2019/02/22/denver.html"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-104.9903,39.7392]
+}
+}
+,
+{
+"type": "Feature",
+"properties": {
+"date": "21 Feb 2019",
+"color": "#9b59b6",
+"description":"<a href='/2019/02/21/kansascity.html'><strong>Couchsurfing KC</strong></a>",
+"icon": "car",
+"title": "Couchsurfing KC",
+"url": "http://localhost:4000/2019/02/21/kansascity.html"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-94.5786,39.0997]
+}
+}
+,
+{
+"type": "Feature",
+"properties": {
+"date": "20 Feb 2019",
+"color": "#9b59b6",
+"description":"<a href='/2019/02/20/stlouis.html'><strong>Return to St. Louis</strong></a>",
+"icon": "car",
+"title": "Return to St. Louis",
+"url": "http://localhost:4000/2019/02/20/stlouis.html"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-90.1994,38.6270]
+}
+}
+,
+{
+"type": "Feature",
+"properties": {
+"date": "19 Feb 2019",
+"color": "#9b59b6",
+"description":"<a href='/2019/02/19/columbus.html'><strong>Stopping through Columbus, Ohio</strong></a>",
+"icon": "car",
+"title": "Stopping through Columbus, Ohio",
+"url": "http://localhost:4000/2019/02/19/columbus.html"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-82.9988,39.9612]
+}
+}
+,
+{
+"type": "Feature",
+"properties": {
+"date": "18 Feb 2019",
+"color": "#9b59b6",
+"description":"<a href='/2019/02/18/philly.html'><strong>Friends in Philadelphia</strong></a>",
 "icon": "car",
 "title": "Friends in Philadelphia",
-"url": "http://localhost:4000/2019/02/07/philly.html"
+"url": "http://localhost:4000/2019/02/18/philly.html"
 },
 "geometry": {
 "type": "Point",
@@ -20,6 +86,8 @@
 {
 "type": "Feature",
 "properties": {
+"date": "06 Feb 2019",
+"color": "#4F518C",
 "description":"<a href='/2019/02/06/firstpost.html'><strong>Making the blog in NYC</strong></a>",
 "icon": "car",
 "title": "Making the blog in NYC",
