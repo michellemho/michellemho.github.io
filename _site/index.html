@@ -47,7 +47,7 @@
             <h1>Michelle + Geoff's Road Trip 2019</h1>
         </header>
         <div>
-            <p style='font-family: Nunito; font-size: 12pt'>
+            <p style='font-family: Nunito; text-align: justify; font-size: 12pt'>
               Click on locations to read our logbook updates and see where our itinerary
               is taking us.
               Have a suggestion of where we should go or just want to say hello?
@@ -93,6 +93,7 @@ const popup = new mapboxgl.Popup({
 });
 
 var url = '/map/map.geojson';
+var line = '/map/line.geojson';
 $.getJSON(url, function (geojson) {
 	const places = geojson;
 	const placesSource = new carto.source.GeoJSON(places);
@@ -111,7 +112,24 @@ $.getJSON(url, function (geojson) {
 	
 	const places_layer = new carto.Layer('places_layer', placesSource, viz);
 	
-	places_layer.addTo(map);
+  places_layer.addTo(map);
+
+  // get line route
+    $.getJSON(line, function(line_geojson){
+      map.addLayer({
+        id: 'the-route',
+        type: 'line',
+        source: {"type": "geojson",
+          "data": line_geojson,
+        },
+        paint: {
+          'line-color': 'magenta',
+          'line-width': 3,
+          'line-dasharray': [3, 3],
+        },
+      });
+    })
+
   places_layer.on('loaded', function() {
     hideLoader();
     const symbol = places_layer.viz.symbol
