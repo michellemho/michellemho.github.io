@@ -1,7 +1,7 @@
 collections:
   authors:
     output: true
-  tags:
+  categories:
     output: true
 future: true
 
@@ -19,3 +19,11 @@ defaults:
 
 mapbox-token: pk.eyJ1IjoibWljaGVsbGVtaG8iLCJhIjoiY2l2MWM0cWthMDA3NDJ5b3g3cGF5d2huaiJ9.2otqgGYhjK7bBnAhrnyu5A
 formspree_email: geoffmichelleclimbski@gmail.com
+
+plugins:
+  - jekyll-feed
+
+feed:
+  categories:
+    - done
+    - upcoming
