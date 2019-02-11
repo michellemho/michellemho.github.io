@@ -8,11 +8,12 @@
 {
 "type": "Feature",
 "properties": {
-"date": "{{ place.date | date_to_string }}",
-"color": {% if place.tags contains 'upcoming' %}"#9b59b6"{% else %}"#4F518C"{% endif %},
-"description":"<a href='{{ place.url }}'><strong>{{ place.title }}</strong></a>",
+"date": "{{ place.date | date: "%B %d %Y" }}",
+"past_or_future": {% if place.tags contains 'upcoming' %}"future"{% else %}"past"{% endif %},
 "icon": "car",
+"something else": "{{ place.title | upcase }}",
 "title": "{{ place.title }}",
+"excerpt": "{{ place.excerpt | escape | strip }}",
 "url": "{{site.url}}{{place.url}}"
 },
 "geometry": {

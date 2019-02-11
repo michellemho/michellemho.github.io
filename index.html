@@ -2,15 +2,36 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Michelle + Geoff's Road Trip" | upcase }}</h1>
-
-<div id="mapid" style="width: 100%; margin: 0 auto 1em; height: 600px"></div>
+<!-- <h1 style='margin-bottom: 5px'>{{ "Michelle + Geoff's Road Trip 2019" | upcase }}</h1> -->
+<div id="mapid">
+<aside class="toolbox" style="left: 24px;">
+    <div class="box">
+        <header>
+            <h1>{{ "Michelle + Geoff's Road Trip 2019" | upcase }}</h1>
+        </header>
+        <div>
+            <p style='font-family: Nunito; font-size: 12pt'>
+              Click on locations to read our logbook updates and see where our itinerary
+              is taking us.
+              Have a suggestion of where we should go or just want to say hello?
+              Send us a message from the suggestions page; we'd love to hear from you!
+            </p>
+          </div>
+        <!-- Add legend data -->
+        <section>
+            <div id="controls">
+                <ul id="content"></ul>
+            </div>
+        </section>
+    </div>
+</aside>
 <div id="loader">
 		<div class="CDB-LoaderIcon CDB-LoaderIcon--big">
 		  <svg class="CDB-LoaderIcon-spinner" viewBox="0 0 50 50">
 			<circle class="CDB-LoaderIcon-path" cx="25" cy="25" r="20" fill="none"></circle>
 		  </svg>
 		</div>
+</div>
 </div>
 <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
@@ -24,11 +45,12 @@ mapboxgl.accessToken = '{{site.mapbox-token}}';
 var map = new mapboxgl.Map({
   container: 'mapid',
   style: 'mapbox://styles/mapbox/bright-v9',
-  center: [-98.5556199,39.8097343],
-  zoom: 3.6
+  center: [-105.5556199,37.97343],
+  zoom: 3
 });
 // Define pop-up
 const popup = new mapboxgl.Popup({
+  className: "popups",
 	closeButton: false,
 	closeOnClick: false
 });
@@ -39,8 +61,11 @@ $.getJSON(url, function (geojson) {
 	const placesSource = new carto.source.GeoJSON(places);
 
 	const viz = new carto.Viz(`
-		@description: $description
-    color: ramp($color, vivid)
+    @title: $title
+    @excerpt: $excerpt
+    @url: $url
+    @postdate: $date
+    color: ramp(buckets($past_or_future, ['future','past']), [#dda61a,#464dce])
 		width: 20
 		symbol: marker
 		strokeWidth: 3
@@ -50,7 +75,34 @@ $.getJSON(url, function (geojson) {
 	const places_layer = new carto.Layer('places_layer', placesSource, viz);
 	
 	places_layer.addTo(map);
-	places_layer.on('loaded', hideLoader);
+  places_layer.on('loaded', function() {
+    hideLoader();
+    const symbol = places_layer.viz.symbol
+    const colorLegend = places_layer.viz.color.getLegendData();
+
+    let symbolLegendList = '';
+
+    colorLegend.data.forEach((legend, index) => {
+      if (legend.key == 'CARTO_VL_OTHERS'){
+        return;
+      }
+      const colorHex = rgbToHex(legend.value);
+      symbolLegendList +=
+        `
+        <li>
+            <span
+              class="image-mark"
+              style="
+                background-color: ${colorHex};
+                mask-image:url(${symbol.url});
+                -webkit-mask-image:url(${symbol.url})
+            "></span>
+            <span style="font-size: 12pt; font-family:'Nunito'">${legend.key}</span>
+        </li>
+      `
+      });
+      document.getElementById('content').innerHTML = symbolLegendList;
+    });
 
 	const interactivity = new carto.Interactivity(places_layer);
     const delay = 50;
@@ -98,7 +150,9 @@ $.getJSON(url, function (geojson) {
 function updatePopup(event) {
       if (event.features.length > 0) {
         const vars = event.features[0].variables;
-        popup.setHTML(`${vars.description.value}`);
+        popup.setHTML(`<div><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
+                      <div class='small'>${vars.postdate.value}</div>`
+                      );
         popup.setLngLat([event.coordinates.lng, event.coordinates.lat]);
         if (!popup.isOpen()) {
           popup.addTo(map);
@@ -108,7 +162,9 @@ function updatePopup(event) {
       }
 }
 
-
+function rgbToHex(color) {
+      return "#" + ((1 << 24) + (color.r << 16) + (color.g << 8) + color.b).toString(16).slice(1);
+    }
 
 function hideLoader() {
       document.getElementById('loader').style.opacity = '0';

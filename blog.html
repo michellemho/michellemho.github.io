@@ -9,7 +9,9 @@ title: Blog
   {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
   {% if posttime < nowunix %}
-    {% include post-desc.html post=post %}
+
+  {% include post-desc.html post=post %}
+
   {% endif %}
   {% endfor %}
 </ul>

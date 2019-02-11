@@ -1,7 +1,7 @@
-- name: Home
+- name: Map
   link: /
-- name: About
-  link: /about.html
+- name: Suggestions
+  link: /suggestions.html
 - name: Posts
   link: /blog.html
 - name: Crew

@@ -31,7 +31,8 @@
 <lastmod>2019-02-22T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/about.html</loc>
+<loc>http://localhost:4000/2019/02/23/aspen.html</loc>
+<lastmod>2019-02-23T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog.html</loc>
@@ -41,5 +42,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/suggestions.html</loc>
 </url>
 </urlset>

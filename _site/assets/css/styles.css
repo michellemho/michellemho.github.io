@@ -1,5 +1,15 @@
-.current {
-  color: green; }
+a, a:visited {
+  text-decoration: none;
+  color: navy; }
+
+a:hover {
+  text-decoration: none;
+  color: magenta; }
+
+a.current {
+  color: #464dce;
+  font-weight: bold;
+  decoration: none; }
 
 h1 {
   text-align: center; }
@@ -14,16 +24,33 @@ nav li {
   display: inline;
   align-items: center;
   margin: auto;
-  font-size: 16pt; }
+  font-size: 12pt; }
+
+nav {
+  height: 30px; }
 
 .container {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .post-div {
   margin: auto;
   text-align: left;
   width: 50%;
-  font-size: 16pt; }
+  font-size: 12pt;
+  padding: 20px; }
 
 .small {
   font-size: 12pt; }
+
+.popups {
+  font-family: 'Nunito'; }
+
+.mapboxgl-popup-content {
+  overflow-y: scroll;
+  overflow-x: scroll; }
+
+#mapid {
+  position: absolute;
+  height: calc(100% - 30px);
+  width: 100%; }

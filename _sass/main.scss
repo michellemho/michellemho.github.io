@@ -1,5 +1,17 @@
-.current {
-    color: green;
+a, a:visited { 
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover { 
+    text-decoration: none;
+    color: magenta;
+}
+
+a.current {
+    color: #464dce;
+    font-weight:bold;
+    decoration: none;
   }
 
 h1 {
@@ -18,25 +30,62 @@ nav li {
     display: inline;
     align-items: center;
     margin: auto;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
-// nav * {
-//     display: flex
-//     justify-content: space-between;
-// }
+nav {
+    height: 30px;
+    // display: flex;
+}
 
 .container {
     display: flex;
+    justify-content: space-between;
   }
 
 .post-div {
     margin: auto;
     text-align: left;
     width: 50%;
-    font-size: 16pt;
+    font-size: 12pt;
+    padding: 20px;
 }
 
 .small {
     font-size:12pt;
+}
+
+// .toolbox {
+//     position: relative;
+//     bottom: 12px;
+//     left: 12px;
+//     width: 10%;
+// }
+// .box {
+//     position: relative;
+//     bottom: 12px;
+//     left: 12px;
+//     height: auto;
+//     width: auto;
+//     padding: 20px 24px;
+//     background: white;
+//     box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+//     border-radius: 4px;
+//     z-index: 1;
+//     display: block;
+// }
+
+.popups {
+    font-family: 'Nunito';
+}
+
+.mapboxgl-popup-content {
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+#mapid {
+        position: absolute;
+        height:  calc(100% - 30px);
+        width: 100%;
 }
