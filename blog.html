@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
+<h1>Itinerary</h1>
 
 <ul class="post-div">
   {% for post in site.posts %}
@@ -11,6 +11,9 @@ title: Blog
   {% if posttime < nowunix %}
 
   {% include post-desc.html post=post %}
+
+  {% else %}
+  {% include future_stop.html post=post %}
 
   {% endif %}
   {% endfor %}

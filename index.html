@@ -123,8 +123,9 @@ $.getJSON(url, function (geojson) {
         
       // initial popup!
 
-      popup.setHTML(`<div><h2><a href="{{ site.posts.last.url }}">{{ site.posts.last.title }}</a></h2>
-                            <div class='small'>{{ site.posts.last.date | | date: "%B %d %Y" }}</div>`
+      popup.setHTML(`<div style='max-width: 300px'><h2><a href="{{ site.posts.last.url }}">{{ site.posts.last.title }}</a></h2>
+                            <div class='small'>{{ site.posts.last.date | | date: "%B %d %Y" }}</div>
+                     <p style="text-align: justify; margin: 0"> {{ site.posts.last.excerpt | strip_html }}... </p> </div>       `
                             );
       popup.setLngLat([{{ site.posts.last.coordinates }}]);
       popup.addTo(map);

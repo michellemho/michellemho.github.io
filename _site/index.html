@@ -30,7 +30,7 @@
             </a></li>
         
             <li><a href="/blog.html" >
-                Posts
+                Itinerary
             </a></li>
         
             <li><a href="/crew.html" >
@@ -160,8 +160,10 @@ $.getJSON(url, function (geojson) {
         
       // initial popup!
 
-      popup.setHTML(`<div><h2><a href="/done/2019/02/06/firstpost.html">Making the blog in NYC</a></h2>
-                            <div class='small'>February 06 2019</div>`
+      popup.setHTML(`<div style='max-width: 300px'><h2><a href="/done/2019/02/06/firstpost.html">Making the blog in NYC</a></h2>
+                            <div class='small'>February 06 2019</div>
+                     <p style="text-align: justify; margin: 0"> This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file.
+... </p> </div>       `
                             );
       popup.setLngLat([-73.985234,40.691411]);
       popup.addTo(map);

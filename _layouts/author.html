@@ -6,12 +6,16 @@ layout: default
 <div class='post-div'>
 {{ content }}
 
-<h2>Posts</h2>
+<h2>Latest Posts</h2>
 <ul>
     {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
     {% if filtered_posts.size > 0 %}
     {% for post in filtered_posts %}
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+    {% if posttime < nowunix %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
     {% endfor %}
     {% else %}
     <li>No posts!</li>
