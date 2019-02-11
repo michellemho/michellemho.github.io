@@ -7,7 +7,7 @@ title: Home
 <aside class="toolbox" style="left: 24px;">
     <div class="box">
         <header>
-            <h1>{{ "Michelle + Geoff's Road Trip 2019" | upcase }}</h1>
+            <h1>{{ "Michelle + Geoff's Road Trip 2019" }}</h1>
         </header>
         <div>
             <p style='font-family: Nunito; font-size: 12pt'>
@@ -102,6 +102,21 @@ $.getJSON(url, function (geojson) {
       `
       });
       document.getElementById('content').innerHTML = symbolLegendList;
+        
+      // initial popup!
+
+      popup.setHTML(`<div><h2><a href="{{ site.posts.last.url }}">{{ site.posts.last.title }}</a></h2>
+                            <div class='small'>{{ site.posts.last.date | | date: "%B %d %Y" }}</div>`
+                            );
+      popup.setLngLat([{{ site.posts.last.coordinates }}]);
+      popup.addTo(map);
+
+      // fly to latest post.
+      map.flyTo({
+      center: [{{ site.posts.last.coordinates }}],
+      zoom: 6,
+      speed: .2
+      });
     });
 
 	const interactivity = new carto.Interactivity(places_layer);
@@ -144,9 +159,10 @@ $.getJSON(url, function (geojson) {
       }
 	});
 	
-	interactivity.on('featureClick', updatePopup);
+  interactivity.on('featureClick', updatePopup);
 
 });
+
 function updatePopup(event) {
       if (event.features.length > 0) {
         const vars = event.features[0].variables;

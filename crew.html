@@ -14,3 +14,9 @@ title: Authors
       <p>{{ author.content | markdownify }}</p>
   {% endfor %}
 </div>
+
+<h1>{{ site.posts.last.title }}</h1>
+{{ site.posts.last.coordinates }}
+{{ site.posts.last.url }}
+{{ site.posts.last.excerpt }}
+{{ site.posts.last.date }}
