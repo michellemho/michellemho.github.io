@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: about
 ---
 <h1>{{ page.name }}</h1>
 <div style='text-align:center'>
-<img style="border-radius: 50%; width: 100px" src="{{site.url}}/{{ page.img }}">
+<img style="border-radius: 50%; width: 100px" src="{{ site.url }}/{{ page.img }}">
 </div>
 
-<div class='post-div'>
 {{ content }}
 
 <h2>Latest Posts</h2>
@@ -24,5 +23,3 @@ layout: default
     <li>No posts!</li>
     {% endif %}
 </ul>
-
-</div>
