@@ -10,7 +10,10 @@ title: Authors
   </div>
   <br>
   {% for author in site.authors %}
+  <div style='text-align:center'>
+      <img style="border-radius: 50%; width: 100px" src="{{site.url}}/{{ author.img }}">
       <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-      <p>{{ author.content | markdownify }}</p>
+  <p>{{ author.content | markdownify }}</p>
+  </div>
   {% endfor %}
 </div>

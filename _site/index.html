@@ -48,8 +48,7 @@
         </header>
         <div>
             <p style='font-family: Nunito; text-align: justify; font-size: 12pt'>
-              Click on locations to read our logbook updates and see where our itinerary
-              is taking us.
+              Click on locations to see where our itinerary is taking us and read our logbook.
               Have a suggestion of where we should go or just want to say hello?
               Send us a message from the suggestions page; we'd love to hear from you!
             </p>
@@ -89,7 +88,7 @@ var map = new mapboxgl.Map({
 const popup = new mapboxgl.Popup({
   className: "popups",
 	closeButton: false,
-	closeOnClick: false
+  closeOnClick: false
 });
 
 var url = '/map/map.geojson';
@@ -99,15 +98,19 @@ $.getJSON(url, function (geojson) {
 	const placesSource = new carto.source.GeoJSON(places);
 
 	const viz = new carto.Viz(`
+    @past_or_future: $past_or_future
     @title: $title
     @excerpt: $excerpt
     @url: $url
+    @place: $place
     @postdate: $date
+    @imgUrl: $imgUrl
     color: ramp(buckets($past_or_future, ['future','past']), [#dda61a,#464dce])
 		width: 20
 		symbol: marker
 		strokeWidth: 3
-		strokeColor: white
+    strokeColor: white
+    
 	`);
 	
 	const places_layer = new carto.Layer('places_layer', placesSource, viz);
@@ -159,11 +162,12 @@ $.getJSON(url, function (geojson) {
       document.getElementById('content').innerHTML = symbolLegendList;
         
       // initial popup!
-
       popup.setHTML(`<div style='max-width: 300px'><h2><a href="/done/2019/02/06/firstpost.html">Making the blog in NYC</a></h2>
                             <div class='small'>February 06 2019</div>
+                            <div style="text-align: center"><img style="width:75%;" src=http://localhost:4000/assets/images/nyc.jpg></div>
                      <p style="text-align: justify; margin: 0"> This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file.
-... </p> </div>       `
+
+<a href="/done/2019/02/06/firstpost.html">[read more]</a> </p> </div>       `
                             );
       popup.setLngLat([-73.985234,40.691411]);
       popup.addTo(map);
@@ -217,15 +221,24 @@ $.getJSON(url, function (geojson) {
 	});
 	
   interactivity.on('featureClick', updatePopup);
+  interactivity.on('featureEnter', updatePopup);
 
 });
 
 function updatePopup(event) {
       if (event.features.length > 0) {
         const vars = event.features[0].variables;
-        popup.setHTML(`<div><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
-                      <div class='small'>${vars.postdate.value}</div>`
-                      );
+        if (vars.past_or_future.value == 'future'){
+          popup.setHTML(`<div style='max-width: 300px'><h2>${vars.place.value}</h2>
+                            <div class='small'>${vars.postdate.value}</div>
+                        </div>`);
+        } else {
+        popup.setHTML(`<div style='max-width: 300px'><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
+                            <div class='small'>${vars.postdate.value}</div>
+                            <div style="text-align: center"><img style="width:75%;" src="${vars.imgUrl.value}"></div>
+                            <p style="text-align: justify; margin: 0"> ${vars.excerpt.value} <a href="${vars.url.value}">[read more]</a></p> </div>`
+                            );
+        }
         popup.setLngLat([event.coordinates.lng, event.coordinates.lat]);
         if (!popup.isOpen()) {
           popup.addTo(map);

@@ -9,10 +9,13 @@
 "date": "February 23 2019",
 "past_or_future": "future",
 "icon": "car",
+"place": "Aspen, CO",
 "something else": "FINALLY SKIING",
 "title": "Finally Skiing",
-"excerpt": "&lt;p&gt;WE ARE FINALLY SKIING.&lt;/p&gt;",
-"url": "http://localhost:4000/upcoming/2019/02/23/aspen.html"
+"excerpt":  "" ,
+"url": "http://localhost:4000/upcoming/2019/02/23/aspen.html",
+"imgUrl": "http://localhost:4000/"
+
 },
 "geometry": {
 "type": "Point",
@@ -26,10 +29,13 @@
 "date": "February 22 2019",
 "past_or_future": "future",
 "icon": "car",
+"place": "Denver, CO",
 "something else": "GETTING HIGH IN DENVER",
 "title": "Getting High in Denver",
-"excerpt": "&lt;p&gt;After the long drive across Kansas, we’re going to be really excited to see our first mountains from Denver.&lt;/p&gt;",
-"url": "http://localhost:4000/upcoming/2019/02/22/denver.html"
+"excerpt":  "" ,
+"url": "http://localhost:4000/upcoming/2019/02/22/denver.html",
+"imgUrl": "http://localhost:4000/"
+
 },
 "geometry": {
 "type": "Point",
@@ -43,10 +49,13 @@
 "date": "February 21 2019",
 "past_or_future": "future",
 "icon": "car",
+"place": "Kansas City, MO",
 "something else": "COUCHSURFING KC",
 "title": "Couchsurfing KC",
-"excerpt": "&lt;p&gt;We’ll be couch-surfing in KC. Despite having made the long St. Louis &amp;lt;–&amp;gt; Denver drive multiple times during college, Michelle has only ever just stopped for barbecue here.&lt;/p&gt;",
-"url": "http://localhost:4000/upcoming/2019/02/21/kansascity.html"
+"excerpt":  "" ,
+"url": "http://localhost:4000/upcoming/2019/02/21/kansascity.html",
+"imgUrl": "http://localhost:4000/"
+
 },
 "geometry": {
 "type": "Point",
@@ -60,10 +69,13 @@
 "date": "February 20 2019",
 "past_or_future": "future",
 "icon": "car",
+"place": "St. Louis, MO",
 "something else": "RETURN TO ST. LOUIS",
 "title": "Return to St. Louis",
-"excerpt": "&lt;p&gt;Michelle went to college at Washington University in St. Louis, but hasn’t been back since 2013. She’s excited to show Geoff the sites. Besides visiting the old stomping grounds, we’re going to climb at Climb So iLL (the climbing gym Michelle worked at during her last year), run around Forest Park, visit City Museum, and see the famous St. Louis Arch.&lt;/p&gt;",
-"url": "http://localhost:4000/upcoming/2019/02/20/stlouis.html"
+"excerpt":  "" ,
+"url": "http://localhost:4000/upcoming/2019/02/20/stlouis.html",
+"imgUrl": "http://localhost:4000/"
+
 },
 "geometry": {
 "type": "Point",
@@ -77,10 +89,13 @@
 "date": "February 19 2019",
 "past_or_future": "future",
 "icon": "car",
+"place": "Columbus, OH",
 "something else": "STOPPING THROUGH COLUMBUS, OHIO",
 "title": "Stopping through Columbus, Ohio",
-"excerpt": "&lt;p&gt;Second stop will be Columbus, Ohio. Neither of us have been here before. Michelle’s college friend Jess’s brother Zach will be hosting us. If you couldn’t tell yet, we’re pretty much couch-surfing across the country. Many thanks to all the friends who are graciously hosting us!&lt;/p&gt;",
-"url": "http://localhost:4000/upcoming/2019/02/19/columbus.html"
+"excerpt":  "" ,
+"url": "http://localhost:4000/upcoming/2019/02/19/columbus.html",
+"imgUrl": "http://localhost:4000/"
+
 },
 "geometry": {
 "type": "Point",
@@ -94,10 +109,13 @@
 "date": "February 18 2019",
 "past_or_future": "future",
 "icon": "car",
+"place": "Philadelphia, PA",
 "something else": "FRIENDS IN PHILADELPHIA",
 "title": "Friends in Philadelphia",
-"excerpt": "&lt;p&gt;First stop, Philly!&lt;/p&gt;",
-"url": "http://localhost:4000/upcoming/2019/02/18/philly.html"
+"excerpt":  "" ,
+"url": "http://localhost:4000/upcoming/2019/02/18/philly.html",
+"imgUrl": "http://localhost:4000/"
+
 },
 "geometry": {
 "type": "Point",
@@ -111,10 +129,13 @@
 "date": "February 06 2019",
 "past_or_future": "past",
 "icon": "car",
+"place": "Brooklyn, NY",
 "something else": "MAKING THE BLOG IN NYC",
 "title": "Making the blog in NYC",
-"excerpt": "&lt;p&gt;This is my first post in the blog! I was really stoked to see that &lt;a href=&quot;https://katydecorah.com&quot;&gt;Katy Decorah&lt;/a&gt; had already come up with a method for using &lt;a href=&quot;https://katydecorah.com/code/jekyll-geojson/&quot;&gt;Jekyll to cook up a geojson file&lt;/a&gt;.&lt;/p&gt;",
-"url": "http://localhost:4000/done/2019/02/06/firstpost.html"
+"excerpt": "This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file.",
+"url": "http://localhost:4000/done/2019/02/06/firstpost.html",
+"imgUrl": "http://localhost:4000/assets/images/nyc.jpg"
+
 },
 "geometry": {
 "type": "Point",
