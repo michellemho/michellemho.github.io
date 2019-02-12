@@ -1,8 +1,8 @@
 - name: Map
   link: /
-- name: Suggestions
-  link: /suggestions.html
 - name: Itinerary
   link: /blog.html
 - name: Crew
   link: /crew.html
+- name: Suggestions
+  link: /suggestions.html
