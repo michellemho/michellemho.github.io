@@ -3,6 +3,8 @@ layout: default
 title: Geoff + Michelle Road Trip
 ---
 <!-- <h1 style='margin-bottom: 5px'>{{ "Michelle + Geoff's Road Trip 2019" | upcase }}</h1> -->
+{%- assign latest_post = site.posts | where: "category", "done" | first -%}
+
 <div id="mapid">
 <aside class="toolbox" style="left: 24px;">
     <div class="box">
@@ -52,6 +54,7 @@ const popup = new mapboxgl.Popup({
   className: "popups",
 	closeButton: false,
   closeOnClick: false,
+  anchor: 'left'
 });
 
 var url = '/map/map.geojson';
@@ -127,7 +130,7 @@ $.getJSON(url, function (geojson) {
 
       // fly to latest post.
       map.flyTo({
-      center: [{{ site.posts.last.coordinates }}],
+      center: [{{ latest_post.coordinates }}],
       zoom: 6,
       speed: 1
       });
@@ -145,12 +148,12 @@ $.getJSON(url, function (geojson) {
    map.on('moveend', function(e){
    if(flying){
       // initial popup!
-      popup.setHTML(`<div style='max-width: 250px'><h2><a href="{{ site.posts.last.url }}">{{ site.posts.last.title }}</a></h2>
-                  <div class='small'>{{ site.posts.last.date | date: "%B %d %Y" }}</div>
-                  <div style="text-align: center"><img style="width:75%;" src={{site.url}}/{{ site.posts.last.img }}></div>
-            <p style="text-align: justify; margin: 0"> {{ site.posts.last.excerpt | strip_html }}<a href="{{ site.posts.last.url }}">[read more]</a> </p> </div>       `
+      popup.setHTML(`<div style='max-width: 250px'><h2><a href="{{ latest_post.url }}">{{ latest_post.title }}</a></h2>
+                  <div class='small'>{{ latest_post.date | date: "%B %d %Y" }}</div>
+                  <div style="text-align: center"><img style="width:75%;" src={{site.url}}/{{ latest_post.img }}></div>
+            <p style="text-align: justify; margin: 0"> {{ latest_post.excerpt | strip_html }}<a href="{{ latest_post.url }}">[read more]</a> </p> </div>       `
                   );
-      popup.setLngLat([{{ site.posts.last.coordinates }}]);
+      popup.setLngLat([{{ latest_post.coordinates }}]);
       popup.addTo(map);
       map.fire('flyend');
       }
