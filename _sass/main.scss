@@ -27,6 +27,14 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+nav ul {
+    display: inline;
+    align-items: center;
+    margin: auto;
+    font-size: 12pt;
+    display: flex;
+}
+
 nav li {
     display: inline;
     align-items: center;
@@ -34,14 +42,15 @@ nav li {
     font-size: 12pt;
 }
 
-nav {
-    height: 30px;
-    // display: flex;
-}
-
 .container {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
+    z-index:2;
+    background-color: rgba(221, 221, 221, 0.603);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
   }
 
 .post-div {
@@ -82,10 +91,11 @@ nav {
     padding:10px;
 }
 
-
 #mapid {
         position: absolute;
-        height:  calc(100% - 30px);
+        top:0;
+        z-index:1;
+        height: 100%;
         width: 100%;
 }
 
@@ -138,3 +148,15 @@ img {
     width: 100%;
     height: auto;
   }
+
+  @media only screen and (max-width: 480px) {
+    .mapboxgl-popup-content {
+        max-width: 250px;
+    }
+    .mapboxgl-popup-content div {
+        padding:0em;
+    }
+    .mapboxgl-popup-content p {
+        margin: 0.5em 0.5em;
+    }
+}
