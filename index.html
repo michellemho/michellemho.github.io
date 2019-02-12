@@ -51,7 +51,7 @@ var map = new mapboxgl.Map({
 const popup = new mapboxgl.Popup({
   className: "popups",
 	closeButton: false,
-  closeOnClick: false
+  closeOnClick: false,
 });
 
 var url = '/map/map.geojson';
@@ -124,21 +124,36 @@ $.getJSON(url, function (geojson) {
       });
       document.getElementById('content').innerHTML = symbolLegendList;
         
-      // initial popup!
-      popup.setHTML(`<div style='max-width: 300px'><h2><a href="{{ site.posts.last.url }}">{{ site.posts.last.title }}</a></h2>
-                            <div class='small'>{{ site.posts.last.date | date: "%B %d %Y" }}</div>
-                            <div style="text-align: center"><img style="width:75%;" src={{site.url}}/{{ site.posts.last.img }}></div>
-                     <p style="text-align: justify; margin: 0"> {{ site.posts.last.excerpt | strip_html }}<a href="{{ site.posts.last.url }}">[read more]</a> </p> </div>       `
-                            );
-      popup.setLngLat([{{ site.posts.last.coordinates }}]);
-      popup.addTo(map);
 
       // fly to latest post.
       map.flyTo({
       center: [{{ site.posts.last.coordinates }}],
       zoom: 6,
-      speed: .2
+      speed: 1
       });
+      map.fire('flystart');
+
+
+    });
+  map.on('flystart', function(){
+  flying = true;
+    });
+    map.on('flyend', function(){
+        flying = false;
+    });
+
+   map.on('moveend', function(e){
+   if(flying){
+      // initial popup!
+      popup.setHTML(`<div style='max-width: 250px'><h2><a href="{{ site.posts.last.url }}">{{ site.posts.last.title }}</a></h2>
+                  <div class='small'>{{ site.posts.last.date | date: "%B %d %Y" }}</div>
+                  <div style="text-align: center"><img style="width:75%;" src={{site.url}}/{{ site.posts.last.img }}></div>
+            <p style="text-align: justify; margin: 0"> {{ site.posts.last.excerpt | strip_html }}<a href="{{ site.posts.last.url }}">[read more]</a> </p> </div>       `
+                  );
+      popup.setLngLat([{{ site.posts.last.coordinates }}]);
+      popup.addTo(map);
+      map.fire('flyend');
+      }
     });
 
 	const interactivity = new carto.Interactivity(places_layer);
@@ -190,11 +205,11 @@ function updatePopup(event) {
       if (event.features.length > 0) {
         const vars = event.features[0].variables;
         if (vars.past_or_future.value == 'future'){
-          popup.setHTML(`<div style='max-width: 300px'><h2>${vars.place.value}</h2>
+          popup.setHTML(`<div style='max-width: 250px'><h2>${vars.place.value}</h2>
                             <div class='small'>${vars.postdate.value}</div>
                         </div>`);
         } else {
-        popup.setHTML(`<div style='max-width: 300px'><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
+        popup.setHTML(`<div style='max-width: 250px'><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
                             <div class='small'>${vars.postdate.value}</div>
                             <div style="text-align: center"><img style="width:75%;" src="${vars.imgUrl.value}"></div>
                             <p style="text-align: justify; margin: 0"> ${vars.excerpt.value} <a href="${vars.url.value}">[read more]</a></p> </div>`
