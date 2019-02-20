@@ -5,7 +5,7 @@ author: michelle
 coordinates: -75.150516,39.962848
 category: "done"
 place: Philadelphia, PA
-img: 'assets/images/philly/car1.jpg'
+img: assets/images/philly/car1.jpg
 ---
 
 First stop: Philadelphia! It's only 2.5 hours away from NYC but both of us managed to take naps on the way there.
