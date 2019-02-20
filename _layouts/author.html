@@ -13,12 +13,12 @@ layout: about
     {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
     {% if filtered_posts.size > 0 %}
     {% for post in filtered_posts %}
-    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-    {% if posttime < nowunix %}
+
+    {% if post.categories contains 'done' %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
-    {% endfor %}
+    {% endfor %}  
+
     {% else %}
     <li>No posts!</li>
     {% endif %}
