@@ -1,6 +1,6 @@
 a, a:visited { 
     text-decoration: none;
-    color: #1e27d3
+    color: #264aec
 }
 
 a:hover { 
@@ -33,6 +33,7 @@ nav ul {
     margin: auto;
     font-size: 12pt;
     display: flex;
+    font-weight: bold;
 }
 
 nav li {
@@ -46,7 +47,7 @@ nav li {
     // display: flex;
     justify-content: space-between;
     z-index:2;
-    background-color: rgba(221, 221, 221, 0.603);
+    background-color: rgba(255, 255, 255, 0.808);
     position: absolute;
     top: 0px;
     right: 0px;
