@@ -59,6 +59,7 @@ const popup = new mapboxgl.Popup({
 
 var url = '/map/map.geojson';
 var line = '/map/line.geojson';
+
 $.getJSON(url, function (geojson) {
 	const places = geojson;
 	const placesSource = new carto.source.GeoJSON(places);
@@ -73,7 +74,7 @@ $.getJSON(url, function (geojson) {
     @imgUrl: $imgUrl
     color: ramp(buckets($past_or_future, ['future','past']), [#dda61a,#464dce])
 		width: 20
-		symbol: marker
+		symbol: image('./car.svg')
 		strokeWidth: 3
     strokeColor: white
     
@@ -97,10 +98,11 @@ $.getJSON(url, function (geojson) {
           'line-dasharray': [3, 3],
         },
       });
-    })
-
+      hideLoader();
+    }
+    )
+  
   places_layer.on('loaded', function() {
-    hideLoader();
     const symbol = places_layer.viz.symbol
     const colorLegend = places_layer.viz.color.getLegendData();
 
