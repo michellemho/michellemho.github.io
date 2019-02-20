@@ -15,7 +15,7 @@ title: Geoff + Michelle Road Trip
             <p style='font-family: Nunito; text-align: justify; font-size: 12pt'>
               Click on locations to see where our itinerary is taking us and read our logbook.
               Have a suggestion of where we should go or just want to say hello?
-              Send us a message from the suggestions page; we'd love to hear from you!
+              Send us a message and subscribe to this blog from the <a href='{{ site.page }}/suggestions.html'>Suggestions</a> page; we'd love to hear from you!
             </p>
           </div>
         <!-- Add legend data -->
@@ -60,7 +60,8 @@ const popup = new mapboxgl.Popup({
 var url = '/map/map.geojson';
 var line = '/map/line.geojson';
 
-$.getJSON(url, function (geojson) {
+map.on('load', function(){
+  $.getJSON(url, function (geojson) {
 	const places = geojson;
 	const placesSource = new carto.source.GeoJSON(places);
 
@@ -72,13 +73,14 @@ $.getJSON(url, function (geojson) {
     @place: $place
     @postdate: $date
     @imgUrl: $imgUrl
-    color: ramp(buckets($past_or_future, ['future','past']), [#dda61a,#464dce])
+    color: ramp(buckets($past_or_future, ['future','past']), [#ffa23f,#464dce])
 		width: 20
-		symbol: image('./car.svg')
+		symbol: image('car.svg')
 		strokeWidth: 3
     strokeColor: white
     
-	`);
+  `);
+ 
 	
 	const places_layer = new carto.Layer('places_layer', placesSource, viz);
 	
@@ -103,12 +105,12 @@ $.getJSON(url, function (geojson) {
     )
   
   places_layer.on('loaded', function() {
-    const symbol = places_layer.viz.symbol
     const colorLegend = places_layer.viz.color.getLegendData();
 
     let symbolLegendList = '';
 
     colorLegend.data.forEach((legend, index) => {
+      const symbol = places_layer.viz.symbol
       if (legend.key == 'CARTO_VL_OTHERS'){
         return;
       }
@@ -117,12 +119,14 @@ $.getJSON(url, function (geojson) {
         `
         <li>
             <span
-              class="image-mark"
-              style="
-                background-color: ${colorHex};
-                mask-image:url(${symbol.url});
-                -webkit-mask-image:url(${symbol.url})
-            "></span>
+                class="image-mark"
+                style="
+                  background-color: ${colorHex};
+                  mask-image:url('./car.svg');
+                  -webkit-mask-image:url('./car.svg');
+                  mask-size: cover;
+                  -webkit-mask-size: cover;
+              "></span>
             <span style="font-size: 12pt; font-family:'Nunito'">${legend.key}</span>
         </li>
       `
@@ -205,6 +209,7 @@ $.getJSON(url, function (geojson) {
   interactivity.on('featureEnter', updatePopup);
 
 });
+})
 
 function updatePopup(event) {
       if (event.features.length > 0) {
