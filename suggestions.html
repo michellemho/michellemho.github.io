@@ -1,16 +1,24 @@
 ---
 layout: about
-title: Suggestions
+title: Suggestions and Subscribe
 ---
+
 <h1>Suggestions</h1>
 
 
-<div class='post-div'>Know a good restaurant or something to do along our route? Send us a suggestion of a place we should stop by!</div>
+<div>Know a good restaurant, tourist attraction, or something fun to do along our route? Send us a suggestion of a place we should stop by!
+  If you think you can join us for a few days along our journey, let us know! 
+</div>
 
-<div class='post-div'>
+<div>
 <form method="POST" action="https://formspree.io/{{ site.formspree_email }}">
   <input type="text" name="name" placeholder="Your name">
-  <textarea style="width:100%" rows="5" name="message" placeholder="Message"></textarea>
+  <textarea style="width:100%; font-family:'Nunito'" rows="5" name="message" placeholder="Message"></textarea>
   <button type="submit">Send</button>
 </form>
 </div>
+
+<h1>Subscribe</h1>
+
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/Geoff-and-Michelle" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Geoff-and-Michelle', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:300px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></form>
+         
