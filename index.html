@@ -156,7 +156,7 @@ map.on('load', function(){
       // initial popup!
       popup.setHTML(`<div style='max-width: 250px'><h2><a href="{{ latest_post.url }}">{{ latest_post.title }}</a></h2>
                   <div class='small'>{{ latest_post.date | date: "%B %d %Y" }}</div>
-                  <div style="text-align: center"><a href="{{ latest_post.url }}"><img style="width:75%;" src={{site.url}}/{{ latest_post.img }}></a></div>
+                  <div style="text-align: center"><a href="{{ latest_post.url }}"><img style="width:100%;" src={{site.url}}/{{ latest_post.img }}></a></div>
             <p style="text-align: justify; margin: 0"> {{ latest_post.excerpt | strip_html }}<a href="{{ latest_post.url }}">[read more]</a> </p> </div>       `
                   );
       popup.setLngLat([{{ latest_post.coordinates }}]);
@@ -221,7 +221,7 @@ function updatePopup(event) {
         } else {
         popup.setHTML(`<div style='max-width: 250px'><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
                             <div class='small'>${vars.postdate.value}</div>
-                            <div style="text-align: center"><a href="${vars.url.value}"><img style="width:75%;" src="${vars.imgUrl.value}"></a></div>
+                            <div style="text-align: center"><a href="${vars.url.value}"><img style="width:100%;" src="${vars.imgUrl.value}"></a></div>
                             <p style="text-align: justify; margin: 0"> ${vars.excerpt.value} <a href="${vars.url.value}">[read more]</a></p> </div>`
                             );
         }
