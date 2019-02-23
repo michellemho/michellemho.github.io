@@ -17,10 +17,10 @@ layout: about
 {{ content }}
 
 <div class="PageNavigation">
-        {% if page.previous.url %}
+        {% if page.previous.url and page.previous.categories contains 'done' %}
           <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
         {% endif %}
-        {% if page.next.url %}
+        {% if page.next.url and page.next.categories contains 'done' %}
           <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
         {% endif %}
 </div>
