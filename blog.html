@@ -15,7 +15,7 @@ title: Blog
   {% endif %}
   {% endfor %} -->
 
-  {% for post in site.posts reversed %}
+  {% for post in site.posts %}
   {% if post.categories contains 'done' %}
   {% include post-desc.html post=post %}
   {% endif %}
