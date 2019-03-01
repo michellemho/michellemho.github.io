@@ -14,8 +14,8 @@ The mall is mostly national chain stores, but there was one epic flea market cal
 
 {% include image.html url="/assets/images/terrehaute/vendorvillage1.jpg" description="" %}
 
-{% include image.html url="/assets/images/terrehaute/vendorvillage.jpg" %}
+{% include image.html url="/assets/images/terrehaute/vendorvillage.JPG" %}
 
-{% include image.html url="/assets/images/terrehaute/vendorvillage2.jpg" description="" %}
+{% include image.html url="/assets/images/terrehaute/vendorvillage2.JPG" description="" %}
 
 {% include image.html url="/assets/images/terrehaute/bacon.jpg" description="Michelle left me for a bacon." %}
