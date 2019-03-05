@@ -4,7 +4,6 @@ collections:
   categories:
     output: true
 future: true
-
 defaults:
   - scope:
       path: ""
@@ -22,6 +21,7 @@ formspree_email: geoffmichelleclimbski@gmail.com
 
 plugins:
   - jekyll-feed
+  - jemoji
 
 feed:
   categories:

@@ -18,6 +18,6 @@ The last 48 hours were exhausting. We emptied out the Brooklyn apartment, packed
 We also said goodbye to Sophie.
 ![Saying bye to Sophie]({{site.url}}/assets/images/philly/sophie.JPG)
 
-In Philly, we caught up with old friends. We spent quality time together making Vietnamese spring rolls for dinner. I have a feeling we're going to miss having fresh healthy food in the very near future.
+In Philly, we stayed with Becca and Greg; and Jason came from Wilmington. We spent quality time together making Vietnamese spring rolls for dinner. I have a feeling we're going to miss having fresh healthy food in the very near future.
 ![springrolls]({{site.url}}/assets/images/philly/springrolls.JPG)
 

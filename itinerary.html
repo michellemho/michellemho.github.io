@@ -1,0 +1,17 @@
+---
+layout: about
+title: Itinerary
+---
+<h1>Itinerary</h1>
+
+<h3>Upcoming Stops -- Tentative Dates</h3>
+<ul>
+    {% for post in site.posts reversed %}
+    {% if post.categories contains 'upcoming' %}
+    {% include future_stop.html post=post %}
+    {% endif %}
+    {% endfor %}  
+    <p>...</p>
+    <h2>Seattle, Washington</h2>
+    <div class='small'>Eventually</div>
+  </ul>
