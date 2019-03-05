@@ -72,6 +72,7 @@ map.on('load', function(){
     @url: $url
     @place: $place
     @postdate: $date
+    @coordinates: $coordinates
     @imgUrl: $imgUrl
     color: ramp(buckets($past_or_future, ['future','past']), [#ea0000,#00bc16])
 		width: 20
@@ -225,7 +226,7 @@ function updatePopup(event) {
                             <p style="text-align: justify; margin: 0"> ${vars.excerpt.value} <a href="${vars.url.value}">[read more]</a></p> </div>`
                             );
         }
-        popup.setLngLat([event.coordinates.lng, event.coordinates.lat]);
+        popup.setLngLat([vars.coordinates.value.split(',')[0], vars.coordinates.value.split(',')[1]]);
         if (!popup.isOpen()) {
           popup.addTo(map);
         }

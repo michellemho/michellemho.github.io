@@ -12,6 +12,7 @@
 "past_or_future": {% if place.categories contains 'upcoming' %}"future"{% else %}"past"{% endif %},
 "icon": "car",
 "place": "{{ place.place }}",
+"coordinates": "{{ place.coordinates }}",
 "something else": "{{ place.title | upcase }}",
 "title": "{{ place.title }}",
 "excerpt": {% if place.categories contains 'done' %}"{{ place.excerpt | strip_html | rstrip }}"{% else %} "" {% endif %},
