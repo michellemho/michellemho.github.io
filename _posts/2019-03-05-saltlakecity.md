@@ -11,7 +11,7 @@ img: assets/images/slc/group.jpg
 We've spent a week in Salt Lake City already. Here are some of the highlights:
 
 - [The Original Pancake House](http://www.originalpancakehouse.com/) is just so many pancakes. Pretty much everything comes with a side of pancakes. We took a car-nap afterwards.
-- [The Tracy Aviary](https://tracyaviary.org/) is full of amazing birds. We made it time for the birdshow at 11 AM. The cute and sociable Keas from New Zealand were our favs. Geoff passed a little metal washer through the fence to them. They played for it for a while, and then passed it back through the fence to us! Aw.
+- [The Tracy Aviary](https://tracyaviary.org/) is full of amazing birds. We made it intime for the birdshow at 11 AM. The cute and sociable Keas from New Zealand were our favs. Geoff passed a little metal washer through the fence to them. They played for it for a while, and then passed it back through the fence to us! Aw.
 {% include image.html url="/assets/images/slc/sunconure.jpg" description="A Sun Conure. Photo cred: Geoff" %}
 - [Momentum Climbing Gym in Sandy](https://www.momentumclimbing.com/sandy/) has amazing views of the mountains. We thought the grading was a little soft compared the NYC. We disliked the extra $5 charge for the lead-belay test.
 - [Alta Ski Area](https://www.alta.com/) is just for skiers. There's a lot of short steep terrain and not a lot of trees. I think I liked Aspen better for the trees and the size.
