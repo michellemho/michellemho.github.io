@@ -8,11 +8,9 @@ img: assets/images/nyc.jpg
 category: "done"
 ---
 
+Right now, we're packing up the Brooklyn apartment and saying see-ya-later to a lot of good friends in NYC. Lots of people ask us where the road-trip is taking us, so I thought it would be good to make a map. I also thought it would be good to make a blog with the map to keep people posted about our journey.
 
 ![NYC Skyline at night]({{site.url}}/{{page.img}})
-
-
-Right now, we're packing up the Brooklyn apartment and saying see-ya-later to a lot of good friends in NYC. Lots of people ask us where the road-trip is taking us, so I thought it would be good to make a map. I also thought it would be good to make a blog with the map to keep people posted about our journey.
 
 I have never really wrote, let alone made, a blog before. A while ago, I kept a [Wordpress blog](https://michellegetsoutside.wordpress.com/) about getting outdoors while living in NYC. I also wrote a couple [Medium posts](https://medium.com/@michellemho) about some bits of code that helped me. Occasionally, I contributed to my [company's blog](https://carto.com/blog/predicting-nyc-collisions/). But that was about it.
 
