@@ -10,7 +10,7 @@ category: "done"
 
 Right now, we're packing up the Brooklyn apartment and saying see-ya-later to a lot of good friends in NYC. Lots of people ask us where the road-trip is taking us, so I thought it would be good to make a map. I also thought it would be good to make a blog with the map to keep people posted about our journey.
 
-I have never really wrote let alone made a blog before. A while ago, I kept a Wordpress blog about getting outdoors while living in NYC. I also wrote a couple Medium posts about some bits of code that helped me. Occasionally, I contributed to my company's blog. But that was about it.
+I have never really wrote, let alone made, a blog before. A while ago, I kept a [Wordpress blog](https://michellegetsoutside.wordpress.com/) about getting outdoors while living in NYC. I also wrote a couple [Medium posts](https://medium.com/@michellemho) about some bits of code that helped me. Occasionally, I contributed to my [company's blog](https://carto.com/blog/predicting-nyc-collisions/). But that was about it.
 
 I started with jotting and drawing some ideas down on paper. I wanted the map of our road-trip to be the focus of the blog. And the posts themselves would appear as pop-ups on top of the map. I didn't want to put a lot of effort into maintaining it while on the road. The goal was to write a new post in markdown, tag it with a longitude-latitude coordinate, and the map-blog could auto-update accordingly.
 

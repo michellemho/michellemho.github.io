@@ -8,6 +8,6 @@ place: Kansas City, MO
 img: assets/images/kc/crepes.jpg
 ---
 
-We couch-surfed in KC! Despite having made the long St. Louis <--> Denver drive multiple times during college, I have only ever just stopped for Arthur Bryant's barbecue here. We stayed in Overland Park, drank whiskey, played board games, and had crepes with our couchsurfing host.
+We couch-surfed in KC! Despite having made the long St. Louis <--> Denver drive multiple times during college, I have only ever just stopped for Arthur Bryant's barbecue here. We stayed in Overland Park, drank whiskey, played board games, and had crepes with our couchsurfing host, Andrew.
 
 {% include image.html url="/assets/images/kc/crepes.jpg" description="Crepes with our couchsurfing host, Andrew" %}
