@@ -1,26 +1,28 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.png">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">     -->
     <meta charset="utf-8">
     <title>Making the blog in NYC</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed" rel="stylesheet">    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Making the blog in NYC</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="Making the blog in NYC" />
 <meta name="author" content="michelle" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file." />
-<meta property="og:description" content="This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file." />
 <link rel="canonical" href="http://localhost:4000/done/2019/02/06/firstpost.html" />
 <meta property="og:url" content="http://localhost:4000/done/2019/02/06/firstpost.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-02-06T00:00:00-05:00" />
+<meta property="article:published_time" content="2019-02-06T00:00:00-08:00" />
 <script type="application/ld+json">
-{"description":"This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file.","author":{"@type":"Person","name":"michelle"},"@type":"BlogPosting","url":"http://localhost:4000/done/2019/02/06/firstpost.html","headline":"Making the blog in NYC","dateModified":"2019-02-06T00:00:00-05:00","datePublished":"2019-02-06T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/done/2019/02/06/firstpost.html"},"@context":"http://schema.org"}</script>
+{"author":{"@type":"Person","name":"michelle"},"@type":"BlogPosting","url":"http://localhost:4000/done/2019/02/06/firstpost.html","headline":"Making the blog in NYC","dateModified":"2019-02-06T00:00:00-08:00","datePublished":"2019-02-06T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/done/2019/02/06/firstpost.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    
 </head>
   <body>
     <nav>
@@ -30,21 +32,26 @@
                 Map
             </a></li>
         
-            <li><a href="/suggestions.html" >
-                Suggestions
+            <li><a href="/itinerary.html" >
+                Itinerary
             </a></li>
         
             <li><a href="/blog.html" >
-                Itinerary
+                Logbook
             </a></li>
         
             <li><a href="/crew.html" >
                 Crew
             </a></li>
         
+            <li><a href="/suggestions.html" >
+                Suggestions
+            </a></li>
+        
     </ul>
 </nav>
-    <!-- <div class="FeaturedImgBanner"  style="background-image: url('http://localhost:4000/assets/images/nyc.jpg');" > -->
+    <div class='post-div'>
+<!-- <div class="FeaturedImgBanner"  style="background-image: url('http://localhost:4000/assets/images/nyc.jpg');" > -->
     <h1>Making the blog in NYC</h1>
     <p style="text-align:center">
         06 Feb 2019
@@ -56,11 +63,44 @@
 <!-- </div> -->
 
 
-<div class='post-div'>
-<p>This is my first post in the blog! I was really stoked to see that <a href="https://katydecorah.com">Katy Decorah</a> had already come up with a method for using <a href="https://katydecorah.com/code/jekyll-geojson/">Jekyll to cook up a geojson file</a>.</p>
-
 <p><img src="http://localhost:4000/assets/images/nyc.jpg" alt="NYC Skyline at night" /></p>
 
+<p>Right now, we’re packing up the Brooklyn apartment and saying see-ya-later to a lot of good friends in NYC. Lots of people ask us where the road-trip is taking us, so I thought it would be good to make a map. I also thought it would be good to make a blog with the map to keep people posted about our journey.</p>
+
+<p>I have never really wrote, let alone made, a blog before. A while ago, I kept a <a href="https://michellegetsoutside.wordpress.com/">Wordpress blog</a> about getting outdoors while living in NYC. I also wrote a couple <a href="https://medium.com/@michellemho">Medium posts</a> about some bits of code that helped me. Occasionally, I contributed to my <a href="https://carto.com/blog/predicting-nyc-collisions/">company’s blog</a>. But that was about it.</p>
+
+<p>I started with jotting and drawing some ideas down on paper. I wanted the map of our road-trip to be the focus of the blog. And the posts themselves would appear as pop-ups on top of the map. I didn’t want to put a lot of effort into maintaining it while on the road. The goal was to write a new post in markdown, tag it with a longitude-latitude coordinate, and the map-blog could auto-update accordingly.</p>
+
+<p>I chose <a href="https://jekyllrb.com/">Jekyll</a> because I have noticed other people make blogs with Jekyll and it seemed simple but able to do what I needed. Jekyll helps you transform plain text into static websites and blogs.</p>
+
+<p>Jekyll processes files with something called “front matter”– which is a snippet of YAML at the top of the file. The variables defined in front matter can be accessed using Liquid, a templating language, which Jekyll understands as anything between curly brackets like: <code class="highlighter-rouge">{{ location }}</code>, and even logic/control flow between curly brackets with percent signs like: <code class="highlighter-rouge">{% for post in posts %}</code>. I had a hunch that I could add the longitude-latitude coordiates in the “front matter” and figure out some way to access them elsewhere using Jekyll for the map.</p>
+
+<p>Like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Making the blog in NYC
+coordinates: -73.985234,40.691411
+---
+</code></pre></div></div>
+
+<p>After I had the bare-bones of a Jekyll blog up and running, I started searching for methods to process a GeoJSON with Jekyll. I was really stoked to see that <a href="https://katydecorah.com">Katy Decorah</a> had already come up with a method for using <a href="https://katydecorah.com/code/jekyll-geojson/">Jekyll to cook up a geojson file</a>. This was exactly what I needed.</p>
+
+<p>GeoJSON is a format standard for encoding a variety of geographic data structures. There’s a blog post written by Tom MacWright entitled <a href="https://macwright.org/2015/03/23/geojson-second-bite.html">“More than you ever wanted to know about GeoJSON”</a>, in case you want to read more about it. Basically, GeoJSON boils down to coordinates– longitude-latitude pairs that, when weaved together correctly, can create wonderful things like <code class="highlighter-rouge">Point</code>, <code class="highlighter-rouge">LineString</code>, <code class="highlighter-rouge">Polygon</code>, <code class="highlighter-rouge">MultiPoint</code>, <code class="highlighter-rouge">MultiLineString</code>, and <code class="highlighter-rouge">MultiPolygon</code>.</p>
+
+<p>With a little help from Katy and the power of Liquid for loops, I eventually had the GeoJSON file I needed based on some pre-created posts. What next? I opted to use <a href="https://docs.mapbox.com/mapbox-gl-js/api/">Mapbox GL JS</a>, which is a JavaScript library that uses WebGL to render interactive maps with vector tiles client-side. I also used <a href="https://carto.com/developers/carto-vl/">CARTO VL</a>, another JavaScript library that sits well with Mapbox GL, for styling.</p>
+
+<p>Then I brought it to my fellow Recursers for feedback. Thanks to so many friends with excellent eyes for detail and design, I got more ideas of how to make the mapblog better: add a suggestion box, add a legend (duh), add instructions or a summary, add a line between points to show the route, add more color, change the navigation bar, add 3D elevation, etc. etc. I’m still working on tweaking the blog as we go, but I think we’re ready to hit the road now.</p>
+
+<p>Thanks for reading! See you on the road.</p>
+
+
+<div class="PageNavigation">
+        
+        
+          <a class="next" href="/done/2019/02/18/philly_test.html">Friends in Philadelphia &raquo;</a>
+        
+</div>
+      
 </div>
   </body>
 </html>

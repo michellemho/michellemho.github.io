@@ -8,6 +8,10 @@ img: assets/images/nyc.jpg
 category: "done"
 ---
 
+
+![NYC Skyline at night]({{site.url}}/{{page.img}})
+
+
 Right now, we're packing up the Brooklyn apartment and saying see-ya-later to a lot of good friends in NYC. Lots of people ask us where the road-trip is taking us, so I thought it would be good to make a map. I also thought it would be good to make a blog with the map to keep people posted about our journey.
 
 I have never really wrote, let alone made, a blog before. A while ago, I kept a [Wordpress blog](https://michellegetsoutside.wordpress.com/) about getting outdoors while living in NYC. I also wrote a couple [Medium posts](https://medium.com/@michellemho) about some bits of code that helped me. Occasionally, I contributed to my [company's blog](https://carto.com/blog/predicting-nyc-collisions/). But that was about it.
@@ -36,5 +40,3 @@ With a little help from Katy and the power of Liquid for loops, I eventually had
 Then I brought it to my fellow Recursers for feedback. Thanks to so many friends with excellent eyes for detail and design, I got more ideas of how to make the mapblog better: add a suggestion box, add a legend (duh), add instructions or a summary, add a line between points to show the route, add more color, change the navigation bar, add 3D elevation, etc. etc. I'm still working on tweaking the blog as we go, but I think we're ready to hit the road now.
 
 Thanks for reading! See you on the road.
-
-![NYC Skyline at night]({{site.url}}/{{page.img}})

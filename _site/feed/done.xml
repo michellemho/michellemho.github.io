@@ -1,3 +1,393 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed/done.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-11T20:21:25-05:00</updated><id>http://localhost:4000/feed/done.xml</id><title type="html"> | Done</title><entry><title type="html">Making the blog in NYC</title><link href="http://localhost:4000/done/2019/02/06/firstpost.html" rel="alternate" type="text/html" title="Making the blog in NYC" /><published>2019-02-06T00:00:00-05:00</published><updated>2019-02-06T00:00:00-05:00</updated><id>http://localhost:4000/done/2019/02/06/firstpost</id><content type="html" xml:base="http://localhost:4000/done/2019/02/06/firstpost.html">&lt;p&gt;This is my first post in the blog! I was really stoked to see that &lt;a href=&quot;https://katydecorah.com&quot;&gt;Katy Decorah&lt;/a&gt; had already come up with a method for using &lt;a href=&quot;https://katydecorah.com/code/jekyll-geojson/&quot;&gt;Jekyll to cook up a geojson file&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed/done.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-04T16:29:26-07:00</updated><id>http://localhost:4000/feed/done.xml</id><title type="html"> | Done</title><entry><title type="html">Olympic National Park</title><link href="http://localhost:4000/done/2019/05/20/olympic.html" rel="alternate" type="text/html" title="Olympic National Park" /><published>2019-05-20T00:00:00-07:00</published><updated>2019-05-20T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/05/20/olympic</id><content type="html" xml:base="http://localhost:4000/done/2019/05/20/olympic.html">&lt;p&gt;We decided to end our 3 month long road-trip with a multiday coastal backpacking trip in Olympic National Park. A final hurrah.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/nyc.jpg&quot; alt=&quot;NYC Skyline at night&quot; /&gt;&lt;/p&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file.</summary></entry></feed>
+&lt;p&gt;This backpacking trip had a lot of firsts for me: first time using a tide chart, first time using a bear canister, and first time camping by the beach.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/boardwalk.jpg&quot; alt=&quot;A three mile boardwalk takes us from Ozette Lake to Cape Alava and the coast.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;A three mile boardwalk takes us from Ozette Lake to Cape Alava and the coast.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/sandywave.jpg&quot; alt=&quot;Awesome sandy wave pattern on the beach.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Awesome sandy wave pattern on the beach.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/campsite.jpg&quot; alt=&quot;Our first campsite at Cape Alava!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our first campsite at Cape Alava!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/sunset_capealava.jpg&quot; alt=&quot;First night sunset. We ate dinner while watching the sky turn red. This was like 9 PM. The sun sets pretty late up here.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;First night sunset. We ate dinner while watching the sky turn red. This was like 9 PM. The sun sets pretty late up here.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/swing.jpg&quot; alt=&quot;There's a fair bit of sea detritus along the hike. Lots of washed up ship parts, buoys, and ropes. We found someone made a ropeswing here.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;There's a fair bit of sea detritus along the hike. Lots of washed up ship parts, buoys, and ropes. We found someone made a ropeswing here.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/fire.jpg&quot; alt=&quot;We burned driftwood for beach fires!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We burned driftwood for beach fires!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/reflections.jpg&quot; alt=&quot;Our second morning was the brightest day we had.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our second morning was the brightest day we had.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/earlymorning.jpg&quot; alt=&quot;We got going relatively early in order to make our crossings before high tide. The ranger told us the timing of tides this week was perfect for hiking. The morning sunlight through the trees was magical.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We got going relatively early in order to make our crossings before high tide. The ranger told us the timing of tides this week was perfect for hiking. The morning sunlight through the trees was magical.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/norwegianmemorial.jpg&quot; alt=&quot;The Norwegian Memorial is tucked into the woods, memorializing those who died in a shipwreck here long ago. We thought about camping here for our third night, but pushed onwards since there was still plenty of daylight.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The Norwegian Memorial is tucked into the woods, memorializing those who died in a shipwreck here long ago. We thought about camping here for our third night, but pushed onwards since there was still plenty of daylight.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/treeseastack.jpg&quot; alt=&quot;A lone tree atop a sea stack.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;A lone tree atop a sea stack.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/snack.jpg&quot; alt=&quot;Pretty nice snack spot.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Pretty nice snack spot.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/overlandpass.jpg&quot; alt=&quot;In the spots where it's impossible to pass even during low tide, there are steep overland crossings.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;In the spots where it's impossible to pass even during low tide, there are steep overland crossings.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/campsite3.jpg&quot; alt=&quot;On our third night, we pitched our tent among the driftwood. We sort of stranded ourselves between two established campsites Starbuck Mine and Chilean Memorial. It was impossible to continue due to high tides and the dark. To backtrack would mean four additional miles of hiking in the dark and two overland passes. So we pitched right in the driftwood, as far back from the water against the cliff. We knew there wasn't a storm coming and the 3 AM high tide was not the monthly high. We woke up at 3 AM anyway, just to make extra sure high tide wouldn't wash us away. All clear!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;On our third night, we pitched our tent among the driftwood. We sort of stranded ourselves between two established campsites Starbuck Mine and Chilean Memorial. It was impossible to continue due to high tides and the dark. To backtrack would mean four additional miles of hiking in the dark and two overland passes. So we pitched right in the driftwood, as far back from the water against the cliff. We knew there wasn't a storm coming and the 3 AM high tide was not the monthly high. We woke up at 3 AM anyway, just to make extra sure high tide wouldn't wash us away. All clear!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/misty.jpg&quot; alt=&quot;Most days were misty and foggy on the trail. But it was a miracle it never rained!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Most days were misty and foggy on the trail. But it was a miracle it never rained!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/rocks.jpg&quot; alt=&quot;90% of this hike is rocks. Rocks and rocks and rocks. I mean, I love rocks (&amp;lt;a href='https://semi-rad.com/2013/11/big-shout-out-to-rocks/'&amp;gt;big shoutout to rocks!&amp;lt;/a&amp;gt;), but I'm kind of over rocks after this trip.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;90% of this hike is rocks. Rocks and rocks and rocks. I mean, I love rocks (&lt;a href=&quot;https://semi-rad.com/2013/11/big-shout-out-to-rocks/&quot;&gt;big shoutout to rocks!&lt;/a&gt;), but I'm kind of over rocks after this trip.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/barnacle.jpg&quot; alt=&quot;One thing nobody told me was how many things I was going to kill while hiking here. You can't avoid it because you have to step in tide pools and rocks at low tide crossings. We stepped on barnacles, mussels, clams, crabs, snails, anenomes, and all sorts of sea creatures. I felt like a monster! I hope their hard shells kept them safe. I tried to step on rocks mostly.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;One thing nobody told me was how many things I was going to kill while hiking here. You can't avoid it because you have to step in tide pools and rocks at low tide crossings. We stepped on barnacles, mussels, clams, crabs, snails, anenomes, and all sorts of sea creatures. I felt like a monster! I hope their hard shells kept them safe. I tried to step on rocks mostly.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/crab.jpg&quot; alt=&quot;All the little crabs would fall off their rocks as we approached. Or put their claws up in defense.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;All the little crabs would fall off their rocks as we approached. Or put their claws up in defense.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/snailtrail.jpg&quot; alt=&quot;I think these are snail trails. There were parts of the beach covered with these cool squiggles.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;I think these are snail trails. There were parts of the beach covered with these cool squiggles.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/starfish1.jpg&quot; alt=&quot;Many sea stars! Or starfishes. Whatever you call them.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Many sea stars! Or starfishes. Whatever you call them.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/starfish3.jpg&quot; alt=&quot;I found starfishes clinging to steep rocks right at the edge of the water during low tide.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;I found starfishes clinging to steep rocks right at the edge of the water during low tide.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/starfish2.jpg&quot; alt=&quot;They seemed to like small vertical crevices.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;They seemed to like small vertical crevices.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/octopus.jpg&quot; alt=&quot;Did you know that this section of the coast is home to the world's largest octopus species called the &amp;lt;a href='https://www.nationalgeographic.com/animals/invertebrates/g/giant-pacific-octopus/'&amp;gt;Giant Pacific Octopus&amp;lt;/a&amp;gt;? We found this dead octopus washed up on the beach. Not sure if it's a Giant but it was pretty darn big.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Did you know that this section of the coast is home to the world's largest octopus species called the &lt;a href=&quot;https://www.nationalgeographic.com/animals/invertebrates/g/giant-pacific-octopus/&quot;&gt;Giant Pacific Octopus&lt;/a&gt;? We found this dead octopus washed up on the beach. Not sure if it's a Giant but it was pretty darn big.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/seastack.jpg&quot; alt=&quot;Cool arch inside a sea stack.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Cool arch inside a sea stack.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/holeinwall.jpg&quot; alt=&quot;This place is called Hole-In-The-Wall! You can walk through the hole during low tide. Three years ago, I came here with some college friends. It's possible to day hike here from Rialto Beach.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;This place is called Hole-In-The-Wall! You can walk through the hole during low tide. Three years ago, I came here with some college friends. It's possible to day hike here from Rialto Beach.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/campsite4.jpg&quot; alt=&quot;Despite being less than 3 miles from Rialto Beach and the end of our hike, we camped one last night right by Hole-In-The-Wall.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Despite being less than 3 miles from Rialto Beach and the end of our hike, we camped one last night right by Hole-In-The-Wall.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/sunset_rialto.jpg&quot; alt=&quot;After being gray all day, the skies cleared dramatically for a stunning sunset.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;After being gray all day, the skies cleared dramatically for a stunning sunset.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/firesparks.jpg&quot; alt=&quot;We had a final beach fire.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We had a final beach fire.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/done.jpg&quot; alt=&quot;Done! But now... how to get back to our car that we left at Ozette Lake?&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Done! But now... how to get back to our car that we left at Ozette Lake?&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/hitchhike.jpg&quot; alt=&quot;We took a gamble and decided to try hitch-hiking. Four different cars picked us up and we made it back to Ozette Lake and our car in under 3 hours. People are awesome! Saved us $120, had we gone with a shuttle company.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We took a gamble and decided to try hitch-hiking. Four different cars picked us up and we made it back to Ozette Lake and our car in under 3 hours. People are awesome! Saved us $120, had we gone with a shuttle company.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/olympic/clams.jpg&quot; alt=&quot;We immediately got seafood after getting back to civilization.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We immediately got seafood after getting back to civilization.&lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">We decided to end our 3 month long road-trip with a multiday coastal backpacking trip in Olympic National Park. A final hurrah.</summary></entry><entry><title type="html">Portland</title><link href="http://localhost:4000/done/2019/05/19/portland.html" rel="alternate" type="text/html" title="Portland" /><published>2019-05-19T00:00:00-07:00</published><updated>2019-05-19T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/05/19/portland</id><content type="html" xml:base="http://localhost:4000/done/2019/05/19/portland.html">&lt;p&gt;Finally visited Portland! Geoff spent a few months here working for Nike after grad school. He claims there’s not much to see. “Great town to live in, not a great town to be a tourist.” he says. Nonetheless, I was excited.&lt;/p&gt;
+
+&lt;p&gt;Somehow we forgot to take photos, so this picture of Geoff chowing down on a Chinese eggy pocket is all I have. We hit up a few different street food vendors here.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/portland/streetfood.jpg&quot; alt=&quot;Yum.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Yum.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We also hit Powell’s books. I spent a couple happy hours roaming the stacks and perusing books. We tried to get a donut at Blue Star, but by then it was 5PM and they were sold out of the day’s supply. Guess I’ll have to come back.&lt;/p&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">Finally visited Portland! Geoff spent a few months here working for Nike after grad school. He claims there’s not much to see. “Great town to live in, not a great town to be a tourist.” he says. Nonetheless, I was excited.</summary></entry><entry><title type="html">Smith Rock Climbing</title><link href="http://localhost:4000/done/2019/05/14/smithrock.html" rel="alternate" type="text/html" title="Smith Rock Climbing" /><published>2019-05-14T00:00:00-07:00</published><updated>2019-05-14T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/05/14/smithrock</id><content type="html" xml:base="http://localhost:4000/done/2019/05/14/smithrock.html">&lt;p&gt;And back to climbing! Smith Rock is spectular. Bright red-orange rocks, green grassy meadows, blue skies, a burbling creek… What more could you ask for?&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/smith.jpg&quot; alt=&quot;Gorgeous.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Gorgeous.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It’s also one of the most convenient and climber-centric places I’ve climbed. Kudos to the local climbing associations and Oregon State Parks that help make this place awesome. The &lt;a href=&quot;https://smithrock.com/campground-bivy&quot;&gt;Bivy campground&lt;/a&gt; is super cheap at $8 per person per night. The site has hot showers, two dishwashing stations, communal picnic area that’s separate from the sleeping area, a recharging station (with USB outlets), and a little free library. All that within walking distance to the rock. Smith Rock also has two nice composting toilets strategically located at the bridge and the most popular crag area.&lt;/p&gt;
+
+&lt;p&gt;It rained a fair bit while we were there, but Smith Rock miraculously doesn’t &lt;em&gt;really&lt;/em&gt; get wet. The volcanic rock somehow absorbs or sheds all the water and you can still get good friction. Just wait out the rain, and you’ll be able to get on the rock again. This is unlike Red Rock, where it’s sandstone and you have to wait two days after rain.&lt;/p&gt;
+
+&lt;p&gt;We did a mix of sport climbing and trad climbing at Smith. It was a great change to go from almost exclusively crack-climbing in Joshua Tree and Yosemite to sport climbing on huge bucket-sized huecos in Smith Rock. But we did find some cracks too.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/landscape.jpg&quot; alt=&quot;The view from the top of Smith Rock.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The view from the top of Smith Rock.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/monkey.jpg&quot; alt=&quot;The famous ''monkey face'' of Smith Rock. It's a free standing pillar that really does look like a monkey's face! It has one of the country's hardest sport climbs on it.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The famous ''monkey face'' of Smith Rock. It's a free standing pillar that really does look like a monkey's face! It has one of the country's hardest sport climbs on it.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/monkeyface.jpg&quot; alt=&quot;See the monkey?&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;See the monkey?&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/eagle.jpg&quot; alt=&quot;Lots of eagles here!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Lots of eagles here!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/wherever.jpg&quot; alt=&quot;We did an easy multipitch sport climb called Wherever I May Roam (great name and great climb!). The wind blowing super cold, making it feel a little more epic.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We did an easy multipitch sport climb called Wherever I May Roam (great name and great climb!). The wind blowing super cold, making it feel a little more epic.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/chickensalad.jpg&quot; alt=&quot;We had some innovations in our camp cooking at Smith Rock. We made chicken salad sandwiches.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We had some innovations in our camp cooking at Smith Rock. We made chicken salad sandwiches.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/smithrock/tomyum.jpg&quot; alt=&quot;And tom yum soup.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;And tom yum soup.&lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">And back to climbing! Smith Rock is spectular. Bright red-orange rocks, green grassy meadows, blue skies, a burbling creek… What more could you ask for?</summary></entry><entry><title type="html">Crater Lake National Park</title><link href="http://localhost:4000/done/2019/05/13/craterlake.html" rel="alternate" type="text/html" title="Crater Lake National Park" /><published>2019-05-13T00:00:00-07:00</published><updated>2019-05-13T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/05/13/craterlake</id><content type="html" xml:base="http://localhost:4000/done/2019/05/13/craterlake.html">&lt;p&gt;Crater Lake is the deepest lake in the United States. With no rivers flowing into or out of the lake, all the water comes from rain or snowfall that collects in this caldera atop Mount Mazama.&lt;/p&gt;
+
+&lt;p&gt;I spent a few days at Crater Lake with my parents before, so this was a repeat visit. But since most of the road circling the lake was closed due to snow, we were only able to see one side of the lake. The fancy mountain chateau where my parents and I stayed was also closed for the season. We only spent a few hours at the lake before heading down. Still, it’s a stunning scene.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/craterlake/us.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/craterlake/lake.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We spent the evening camping at a local Sno-Park. I didn’t know what a Sno-Park was until this trip. They’re public parks for snow-mobiling, cross country skiing, and other snow activities. I’m not sure if this is standard, but this particular one had free camping and pit toilets. Why didn’t we stay at more Sno-Parks??? It also had a warming hut complete with woodfire stove, firewood, picnic tables, and candles. During the winter season, it appears there’s also electricity for lights and wifi.&lt;/p&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">Crater Lake is the deepest lake in the United States. With no rivers flowing into or out of the lake, all the water comes from rain or snowfall that collects in this caldera atop Mount Mazama.</summary></entry><entry><title type="html">Lassen Volcanic National Park</title><link href="http://localhost:4000/done/2019/05/12/lassen.html" rel="alternate" type="text/html" title="Lassen Volcanic National Park" /><published>2019-05-12T00:00:00-07:00</published><updated>2019-05-12T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/05/12/lassen</id><content type="html" xml:base="http://localhost:4000/done/2019/05/12/lassen.html">&lt;p&gt;Everyone thought Lassen Peak was an extinct volcano until it suddenly exploded on Memorial Day in 1914. Shortly thereafter, the region was established as a national park.&lt;/p&gt;
+
+&lt;p&gt;When we visited, most of the park roads were closed and the campgrounds covered in snow. We camped in the parking lot. We drove to the Sulphur Works, a series of fumaroles (volcanic openings) that are essentially steaming hot bubbling slurries of mud that stink of rotten eggs. Charming. There was another geothermal area wonderfully called “Bumpass Hell”. We didn’t get to see it due to road closures, but we’ll have to come back!&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/lassen/lassen.jpg&quot; alt=&quot;Sulphur Works. Much of the rest of Lassen National Park is a beautiful snowscape. We saw a few cross-country skiers and snowshoers in the parking lot. And families with kids sledding. Much of the year this park is just covered in pristine snow with very few visitors.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Sulphur Works. Much of the rest of Lassen National Park is a beautiful snowscape. We saw a few cross-country skiers and snowshoers in the parking lot. And families with kids sledding. Much of the year this park is just covered in pristine snow with very few visitors.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/lassen/sulphur.jpg&quot; alt=&quot;Sulphur Works. Geoff and I threw snowballs into the ''mud pots'' hoping something exciting would happen. Nothing happened.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Sulphur Works. Geoff and I threw snowballs into the ''mud pots'' hoping something exciting would happen. Nothing happened.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/lassen/parkinglot.jpg&quot; alt=&quot;Our campsite.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our campsite.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;There wasn’t much else to do… but there was free WiFi at the Visitors Center! Geoff and I actually watched the penultimate episode of Game of Thrones in the Visitors Center lobby after dinner. 5 stars for the National Park Service.&lt;/p&gt;
+
+&lt;p&gt;Lassen Volcanic National Park is part of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Volcanic_Legacy_Scenic_Byway&quot;&gt;Volcanic Legacy Scenic Byway&lt;/a&gt;, a 500 mile road that connects multiple volcanoes. We drove most of this byway to get to Crater Lake, our next stop.&lt;/p&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">Everyone thought Lassen Peak was an extinct volcano until it suddenly exploded on Memorial Day in 1914. Shortly thereafter, the region was established as a national park.</summary></entry><entry><title type="html">Modesto Rest Day</title><link href="http://localhost:4000/done/2019/05/11/modesto.html" rel="alternate" type="text/html" title="Modesto Rest Day" /><published>2019-05-11T00:00:00-07:00</published><updated>2019-05-11T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/05/11/modesto</id><content type="html" xml:base="http://localhost:4000/done/2019/05/11/modesto.html">&lt;p&gt;Just some much needed Airbnb, shower, computer, and Game of Thrones catch-up time.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/modesto/salmon.jpg&quot; alt=&quot;This is the only picture I took in Modesto. Cooked fish for the first time in months!!! We also bought a bag of 20 avocados for $5 at a local produce stand and made guacamole for the next week. Gotta love California.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;This is the only picture I took in Modesto. Cooked fish for the first time in months!!! We also bought a bag of 20 avocados for $5 at a local produce stand and made guacamole for the next week. Gotta love California.&lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">Just some much needed Airbnb, shower, computer, and Game of Thrones catch-up time.</summary></entry><entry><title type="html">Yosemite National Park</title><link href="http://localhost:4000/done/2019/04/25/yosemite.html" rel="alternate" type="text/html" title="Yosemite National Park" /><published>2019-04-25T00:00:00-07:00</published><updated>2019-04-25T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/04/25/yosemite</id><content type="html" xml:base="http://localhost:4000/done/2019/04/25/yosemite.html">&lt;p&gt;We made it to the mecca of climbing: Yosemite. There is just so much climbing history here. It’s so exciting to think that we’re climbing the same rock and routes that legends established decades ago. And climbing history is still being made here!&lt;/p&gt;
+
+&lt;p&gt;I remember sitting at my desk in the District Attorney’s office watching the live stream of Tommy Caldwell and Kevin Jorgeson top out the &lt;a href=&quot;https://www.dawnwall-film.com/&quot;&gt;Dawn Wall&lt;/a&gt; in 2015. The Dawn Wall is considered the hardest free climb (meaning done without aid), going 3000+ feet up a steep blank face of El Capitan in Yosemite. Back in 2012, Kevin Jorgeson came to WashU in St. Louis to give a talk about the project, which is the first time I had heard of it. I was just starting to get into rock climbing then, and didn’t quite know even where El Cap was or what trad climbing meant. Fast forward seven years, here we are.&lt;/p&gt;
+
+&lt;h2 id=&quot;waterfalls-and-valley-views&quot;&gt;Waterfalls and Valley Views&lt;/h2&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/tunnelview.jpg&quot; alt=&quot;The grand reveal from Tunnel View. Driving from Wawona, you enter a tunnel which spirits you to this magical valley view. Bridalveil Fall, Half Dome, Glacier Point, and El Cap can be seen here. &quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The grand reveal from Tunnel View. Driving from Wawona, you enter a tunnel which spirits you to this magical valley view. Bridalveil Fall, Half Dome, Glacier Point, and El Cap can be seen here. &lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/yosemitefall.jpg&quot; alt=&quot;Yosemite Falls is the seventh longest waterfall in the world. When we arrived in Yosemite, all the waterfalls were going at full force. Our tow truck driver told us this is the best they've been in the last 8 years (Wait, what tow truck driver, you ask? Keep reading). It was amazing to just look around and count the numerous waterfalls cascading off cliffs and casting misty rainbows over the valley.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Yosemite Falls is the seventh longest waterfall in the world. When we arrived in Yosemite, all the waterfalls were going at full force. Our tow truck driver told us this is the best they've been in the last 8 years (Wait, what tow truck driver, you ask? Keep reading). It was amazing to just look around and count the numerous waterfalls cascading off cliffs and casting misty rainbows over the valley.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/pano.jpg&quot; alt=&quot;We hiked to the top of Yosemite Falls.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We hiked to the top of Yosemite Falls.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/yosemitepoint.jpg&quot; alt=&quot;Us at Yosemite Point, above Yosemite Falls.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Us at Yosemite Point, above Yosemite Falls.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/yellowbellymarmot.jpg&quot; alt=&quot;We spotted a yellow-belly marmot at Yosemite Point! I also later saw a bear casually crossing the street near Half Dome Village, but wasn't quick enough to pull out my camera. Tourists and rangers chased after it.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We spotted a yellow-belly marmot at Yosemite Point! I also later saw a bear casually crossing the street near Half Dome Village, but wasn't quick enough to pull out my camera. Tourists and rangers chased after it.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/vernalfalls.jpg&quot; alt=&quot;There are two more waterfalls behind Happy Isles and Half Dome. This is us at the top of Vernal Fall. We hiked the very, very wet and aptly named Mist Trail to get to this point.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;There are two more waterfalls behind Happy Isles and Half Dome. This is us at the top of Vernal Fall. We hiked the very, very wet and aptly named Mist Trail to get to this point.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/misttrail.jpg&quot; alt=&quot;Umbrellas, raincoats, and rain pants recommended!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Umbrellas, raincoats, and rain pants recommended!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/nevadafalls.jpg&quot; alt=&quot;Further up the trail is the Nevada Fall. In the background is Liberty Cap and the backside of Half Dome. I opted to take the John Muir Trail instead of the Mist Trail back to Happy Isles, hoping it would be less wet. It was not.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Further up the trail is the Nevada Fall. In the background is Liberty Cap and the backside of Half Dome. I opted to take the John Muir Trail instead of the Mist Trail back to Happy Isles, hoping it would be less wet. It was not.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;camp-4&quot;&gt;Camp 4&lt;/h2&gt;
+
+&lt;p&gt;A few years ago, I was gifted Steve Roper’s book “Camp 4: Recollections of a Yosemite Rockclimber”, which I voraciously tore through and wondered when I’d ever go. Camp 4 has been home base for many legendary climbers for decades. To have stayed at Camp 4 is a dream come true.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/campfourgeoff.jpg&quot; alt=&quot;A typical evening at Camp 4: hundreds of tents, dozens of languages and accents, and stir-fry for dinner.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;A typical evening at Camp 4: hundreds of tents, dozens of languages and accents, and stir-fry for dinner.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/mattresstent.jpg&quot; alt=&quot;In the ultimate dirtbag move, we dragged a mattress we found by the dumpster and put it under our tent. We slept like kings for a couple nights.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;In the ultimate dirtbag move, we dragged a mattress we found by the dumpster and put it under our tent. We slept like kings for a couple nights.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Yosemite Valley has a seven day camping limit from May through September. So how is it that we were able to wrangle eleven nights? Well, it turns out if you get two flat tires and have to get your car fixed at the Yosemite Valley Garage, then they give you a really nice note that explains to the campground ranger that you need to stay for a few more nights… which is exactly what happened to us. There are worse places in the world to be stranded.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/flattire.jpg&quot; alt=&quot;There is no shoulder on this narrow road from El Portal to Yosemite. Apparently, this happens to a lot of people (gorgeous views + narrow road + sharp curb = flat tires). The Yosemite Valley Garage and Kathy, the hotel operator, are heroes. We were able to get back on the road within a week.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;There is no shoulder on this narrow road from El Portal to Yosemite. Apparently, this happens to a lot of people (gorgeous views + narrow road + sharp curb = flat tires). The Yosemite Valley Garage and Kathy, the hotel operator, are heroes. We were able to get back on the road within a week.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;rock-climbing&quot;&gt;Rock Climbing&lt;/h2&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/munginella.jpg&quot; alt=&quot;Our first climb in Yosemite was Munginella, a 5.6 two pitch climb. I'm not sure why it's called that, there was nothing 'munge' about it. I loved it.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our first climb in Yosemite was Munginella, a 5.6 two pitch climb. I'm not sure why it's called that, there was nothing 'munge' about it. I loved it.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/fiveopenbooksdescent.jpg&quot; alt=&quot;The descent from Munginella. After this beautiful goat trail, we rappeled down a small waterfall. Our rope got wet, but it was awesome.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The descent from Munginella. After this beautiful goat trail, we rappeled down a small waterfall. Our rope got wet, but it was awesome.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/selingenella.jpg&quot; alt=&quot;Above Munginella is a climb called Selaginella. We came back a different day and climbed the whole thing (Caverns + Selaginella) in 9 pitches-- my longest climb yet!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Above Munginella is a climb called Selaginella. We came back a different day and climbed the whole thing (Caverns + Selaginella) in 9 pitches-- my longest climb yet!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/jamcrack.jpg&quot; alt=&quot;One of our Camp 4 neighbors had a book titled &amp;lt;i&amp;gt;The Crack Climber's Technique Manual&amp;lt;/i&amp;gt; which I pretty much read in one night. I'm completely new to crack climbing, and this trip (especially Joshua Tree and Yosemite) has featured nothing but cracks. My favorite quote from the book is: ''Face climbing is climbing what is there. Crack climbing is climbing what is NOT there.'' So true. Crack climbing is just not intuitive. This is me leading Jam Crack, which I think is the first time I actually enjoyed climbing crack. My toes didn't hurt too much, the placements were easy, and the hand jams were solid.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;One of our Camp 4 neighbors had a book titled &lt;i&gt;The Crack Climber's Technique Manual&lt;/i&gt; which I pretty much read in one night. I'm completely new to crack climbing, and this trip (especially Joshua Tree and Yosemite) has featured nothing but cracks. My favorite quote from the book is: ''Face climbing is climbing what is there. Crack climbing is climbing what is NOT there.'' So true. Crack climbing is just not intuitive. This is me leading Jam Crack, which I think is the first time I actually enjoyed climbing crack. My toes didn't hurt too much, the placements were easy, and the hand jams were solid.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/climbing.jpg&quot; alt=&quot;I think this was taken from the top of Bishop Terrace, a great 5.8 crack climb that Geoff lead.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;I think this was taken from the top of Bishop Terrace, a great 5.8 crack climb that Geoff lead.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/nutcracker2.jpg&quot; alt=&quot;Our last day climbing at Yosemite, we climbed Nutcracker, a five pitch route which was originally climbed with only stoppers. We did it in six pitches, with cams.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our last day climbing at Yosemite, we climbed Nutcracker, a five pitch route which was originally climbed with only stoppers. We did it in six pitches, with cams.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/nutcracker.jpg&quot; alt=&quot;View from the top of Nutcracker. It seriously looks like the Land Before Time here, a few dinosaurs roaming the meadows would not be out of place here.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;View from the top of Nutcracker. It seriously looks like the Land Before Time here, a few dinosaurs roaming the meadows would not be out of place here.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;mariposa-grove&quot;&gt;Mariposa Grove&lt;/h2&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/mariposagrove.jpg&quot; alt=&quot;We saw coastal redwoods in Big Sur, and now we've seen their cousins, the Giant Sequoias, in Mariposa Grove in Yosemite! I stand corrected-- in the Big Sur post, I said Coastal Redwoods were shorter. Coastal Redwoods are, in fact, taller, but the Giant Sequoias are larger by mass!&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We saw coastal redwoods in Big Sur, and now we've seen their cousins, the Giant Sequoias, in Mariposa Grove in Yosemite! I stand corrected-- in the Big Sur post, I said Coastal Redwoods were shorter. Coastal Redwoods are, in fact, taller, but the Giant Sequoias are larger by mass!&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/grizzlygiant.jpg&quot; alt=&quot;This tree is called the Grizzly Giant.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;This tree is called the Grizzly Giant.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/calitunnel.jpg&quot; alt=&quot;At some point a while ago, humans thought it would be cool to drill a tunnel through this poor tree. It's called the California Tunnel, and hundreds of tourists drove through it and carved their names into the wood. Now the tree is growing bark back around it, trying to cover the scar.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;At some point a while ago, humans thought it would be cool to drill a tunnel through this poor tree. It's called the California Tunnel, and hundreds of tourists drove through it and carved their names into the wood. Now the tree is growing bark back around it, trying to cover the scar.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/yosemite/somekillers.jpg&quot; alt=&quot;Finally some trivia! Why is Yosemite called Yosemite? The Miwok people living here called it &amp;lt;i&amp;gt;Ahwahnee&amp;lt;/i&amp;gt;, meaning ''place like a gaping mouth''-- fair enough. But their neighbors called the natives here &amp;lt;i&amp;gt;Yohemite&amp;lt;/i&amp;gt;, meaning ''some of them are killers''. Oh my. &quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Finally some trivia! Why is Yosemite called Yosemite? The Miwok people living here called it &lt;i&gt;Ahwahnee&lt;/i&gt;, meaning ''place like a gaping mouth''-- fair enough. But their neighbors called the natives here &lt;i&gt;Yohemite&lt;/i&gt;, meaning ''some of them are killers''. Oh my. &lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">We made it to the mecca of climbing: Yosemite. There is just so much climbing history here. It’s so exciting to think that we’re climbing the same rock and routes that legends established decades ago. And climbing history is still being made here!</summary></entry><entry><title type="html">Bishop</title><link href="http://localhost:4000/done/2019/04/16/bishop.html" rel="alternate" type="text/html" title="Bishop" /><published>2019-04-16T00:00:00-07:00</published><updated>2019-04-16T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/04/16/bishop</id><content type="html" xml:base="http://localhost:4000/done/2019/04/16/bishop.html">&lt;p&gt;In Bishop, we hit a sweet spot alternating days climbing and skiing. We did that for about 12 straight days (save for a few “rest” days). From Bishop, it’s about a 40 minute drive up to Mammoth to ski and a 20 minute drive to Owens River Gorge to climb.&lt;/p&gt;
+
+&lt;p&gt;We camped at the Pleasant Valley Pit Campground (only $5 per site per night) for 10 days and spent two nights at &lt;a href=&quot;www.thehostelcalifornia.com&quot;&gt;The Hostel California&lt;/a&gt; (mostly to shower and watch Game of Thrones).&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/camp.jpg&quot; alt=&quot;Our campsite home for a week in Bishop.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our campsite home for a week in Bishop.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/train.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On one of our rest days, we went to the &lt;a href=&quot;https://www.lawsmuseum.org/&quot;&gt;Laws Museum&lt;/a&gt;. The place reminded me of the aircraft hangar at Floyd Bennett field, Boomtown 1915 from the Las Vegas Springs Preserve, and even Governors Island, with all its old army barracks and houses. Except the Laws Museum is all about trains, mining, and pioneer living. We spent a sunny morning poking around the grounds and marveling at the vast collection of old junk and thinking about how tough life was back then and how we can now drive away in air conditioned wagons.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/southlake.jpg&quot; alt=&quot;On another rest day, we went to South Lake, west of Bishop up in the Sierras. We couldn't hike any trails because of the snow, but it was still very neat to see this snow covered landscape.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;On another rest day, we went to South Lake, west of Bishop up in the Sierras. We couldn't hike any trails because of the snow, but it was still very neat to see this snow covered landscape.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/chipsummit.jpg&quot; alt=&quot;We climbed a multipitch climb called Chips Off the Old Block in the Pine Creek Area. Every pitch was fantastic, demanding at various points slab, crack, chimney, and offwidth skills. This is us after topping out.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We climbed a multipitch climb called Chips Off the Old Block in the Pine Creek Area. Every pitch was fantastic, demanding at various points slab, crack, chimney, and offwidth skills. This is us after topping out.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/rappel.jpg&quot; alt=&quot;Rappelling off Chips Off the Old Block in the Pine Creek Area. White Mountains in the background.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Rappelling off Chips Off the Old Block in the Pine Creek Area. White Mountains in the background.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/hotspring.jpg&quot; alt=&quot;Hot Springs abound in this area! This one is called Wild Willy's and it's quite a hot one. After bumping along a dirtroad, we parked our car and followed a boardwalk out into the desert that led to this steaming pool.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Hot Springs abound in this area! This one is called Wild Willy's and it's quite a hot one. After bumping along a dirtroad, we parked our car and followed a boardwalk out into the desert that led to this steaming pool.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/uppergorge.jpg&quot; alt=&quot;The Owens River Gorge from above, before descending into the upper gorge area.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The Owens River Gorge from above, before descending into the upper gorge area.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/gorgeoustowers.jpg&quot; alt=&quot;The Gorgous Towers area in the Owens River Gorge has this distinctive wide chimney. &quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;The Gorgous Towers area in the Owens River Gorge has this distinctive wide chimney. &lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/gorgeous.jpg&quot; alt=&quot;... which I could barely span! I don't think this move is part of any real climb, but it came in handy when I needed to bail off the 5.11 arete on the left and jump over to the much nicer 5.8 arete on the right to save my quickdraws...&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;... which I could barely span! I don't think this move is part of any real climb, but it came in handy when I needed to bail off the 5.11 arete on the left and jump over to the much nicer 5.8 arete on the right to save my quickdraws...&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/bishop/slipnslide.jpg&quot; alt=&quot;We climbed a climb called Slip and Slide in Owens River Gorge. Half slab, half crack, all fun. This is a picture of me that Geoff took from the top looking down as I follow him up the climb.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We climbed a climb called Slip and Slide in Owens River Gorge. Half slab, half crack, all fun. This is a picture of me that Geoff took from the top looking down as I follow him up the climb.&lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">In Bishop, we hit a sweet spot alternating days climbing and skiing. We did that for about 12 straight days (save for a few “rest” days). From Bishop, it’s about a 40 minute drive up to Mammoth to ski and a 20 minute drive to Owens River Gorge to climb.</summary></entry><entry><title type="html">Mammoth</title><link href="http://localhost:4000/done/2019/04/14/mammoth.html" rel="alternate" type="text/html" title="Mammoth" /><published>2019-04-14T00:00:00-07:00</published><updated>2019-04-14T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/04/14/mammoth</id><content type="html" xml:base="http://localhost:4000/done/2019/04/14/mammoth.html">&lt;p&gt;We drove down to Mammoth Lakes to ski more. Discovering the 200 inch snow base and the fact that Mammoth stays open until July 4th (whaaat?!) we pretty much immediately bought Ikon passes for 2019/2020 so we can start using them now. We’re now looking for short-term rentals in Bishop/Mammoth Lakes area, anyone have any connections?&lt;/p&gt;
+
+&lt;p&gt;We stayed at the lovely &lt;a href=&quot;https://holidayhausmotelandhostel.com/&quot;&gt;Moderne Hostel&lt;/a&gt; where we watched Game of Thrones, cooked our dinners, and met great people. In the morning, we walked over to the Village Gondola, and rode over the town marveling at the height of the snow– there were two story houses still almost buried!&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/mammoth/mammoth.jpg&quot; alt=&quot;Our first  day at Mammoth were cold, windy, and not very good conditions. It was completely white-out from the top of the bottom lifts, and all the other higher lifts were closed. Yet by the base, it was super slushy and hard to ski over. Still found some fresh snow and got a few good turns in. On our second day, the skies cleared in the afternoon and we were able to take a lift higher up. We did countless laps on the Facelift lift.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Our first  day at Mammoth were cold, windy, and not very good conditions. It was completely white-out from the top of the bottom lifts, and all the other higher lifts were closed. Yet by the base, it was super slushy and hard to ski over. Still found some fresh snow and got a few good turns in. On our second day, the skies cleared in the afternoon and we were able to take a lift higher up. We did countless laps on the Facelift lift.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/mammoth/lounge.jpg&quot; alt=&quot;Apres ski lounge.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Apres ski lounge.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/mammoth/monolake.jpg&quot; alt=&quot;Driving from Tahoe to Mammoth Lakes, we passed Mono Lake.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Driving from Tahoe to Mammoth Lakes, we passed Mono Lake.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/mammoth/tufa.jpg&quot; alt=&quot;There are interesting rock formations called tufas in Mono Lake. They are limestone precipitations that form underwater, meaning their appearance at the surface indicate how much the water level has dropped. Apparently Los Angeles  drained the lake for water several decades ago. There are now efforts to restore the lake to its previous level.
+
+Apparently, LA diverting water is a theme in this whole region. Our fellow hostel guests told us about an old movie &amp;lt;a href='https://en.wikipedia.org/wiki/Chinatown_(1974_film)'&amp;gt;'Chinatown'&amp;lt;/a&amp;gt;, a dramatized story about the water war betwen Los Angeles and Owens Valley near Bishop.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;There are interesting rock formations called tufas in Mono Lake. They are limestone precipitations that form underwater, meaning their appearance at the surface indicate how much the water level has dropped. Apparently Los Angeles  drained the lake for water several decades ago. There are now efforts to restore the lake to its previous level.
+
+Apparently, LA diverting water is a theme in this whole region. Our fellow hostel guests told us about an old movie &lt;a href=&quot;https://en.wikipedia.org/wiki/Chinatown_(1974_film)&quot;&gt;'Chinatown'&lt;/a&gt;, a dramatized story about the water war betwen Los Angeles and Owens Valley near Bishop.&lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">We drove down to Mammoth Lakes to ski more. Discovering the 200 inch snow base and the fact that Mammoth stays open until July 4th (whaaat?!) we pretty much immediately bought Ikon passes for 2019/2020 so we can start using them now. We’re now looking for short-term rentals in Bishop/Mammoth Lakes area, anyone have any connections?</summary></entry><entry><title type="html">Truckee/Tahoe/Squaw</title><link href="http://localhost:4000/done/2019/04/11/tahoe.html" rel="alternate" type="text/html" title="Truckee/Tahoe/Squaw" /><published>2019-04-11T00:00:00-07:00</published><updated>2019-04-11T00:00:00-07:00</updated><id>http://localhost:4000/done/2019/04/11/tahoe</id><content type="html" xml:base="http://localhost:4000/done/2019/04/11/tahoe.html">&lt;p&gt;Back to skiing, which is our first time since leaving Utah.&lt;/p&gt;
+
+&lt;p&gt;A year after watching &lt;a href=&quot;https://vimeo.com/18809446&quot;&gt;G.N.A.R.&lt;/a&gt;, I was really excited to see the cliffs and hopefully spy a naked skier or two. On our second day, we saw someone huck a backflip off a cliff during the &lt;a href=&quot;https://www.sacbee.com/sports/outdoors/article229345634.html&quot;&gt;Red Bull Raid&lt;/a&gt;. Squallywood delivers!&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/tahoe/squaw.JPG&quot; alt=&quot;Looking down to the base of Squaw.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Looking down to the base of Squaw.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/tahoe/grind.jpg&quot; alt=&quot;We found the perfect little terrain park for us and spent many happy laps practicing baby jumps and grinds like this one.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;We found the perfect little terrain park for us and spent many happy laps practicing baby jumps and grinds like this one.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/tahoe/us.jpg&quot; alt=&quot;Cheesing.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Cheesing.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/tahoe/happy.jpg&quot; alt=&quot;Typical car time together.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;Typical car time together.&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div&gt;&lt;img src=&quot;/assets/images/tahoe/tireswing.jpg&quot; alt=&quot;After leaving Truckee, we drove around Lake Tahoe and found this little tireswing on the Nevada side! Also-- gas is WAY cheaper once you cross the border to Nevada. Reno is now a semi-serious contender for where we move.&quot; /&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;After leaving Truckee, we drove around Lake Tahoe and found this little tireswing on the Nevada side! Also-- gas is WAY cheaper once you cross the border to Nevada. Reno is now a semi-serious contender for where we move.&lt;/figcaption&gt;
+&lt;/div&gt;</content><author><name>michelle</name></author><category term="done" /><summary type="html">Back to skiing, which is our first time since leaving Utah.</summary></entry></feed>

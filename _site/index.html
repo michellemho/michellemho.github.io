@@ -1,21 +1,25 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.png">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">     -->
     <meta charset="utf-8">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed" rel="stylesheet">    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Geoff + Michelle Road Trip</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Home</title>
-<meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Home" />
+<title>Geoff + Michelle Road Trip</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Geoff + Michelle Road Trip" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Home","@context":"http://schema.org"}</script>
+{"@type":"WebSite","url":"http://localhost:4000/","headline":"Geoff + Michelle Road Trip","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    
 </head>
   <body>
     <nav>
@@ -25,32 +29,35 @@
                 Map
             </a></li>
         
-            <li><a href="/suggestions.html" >
-                Suggestions
+            <li><a href="/itinerary.html" >
+                Itinerary
             </a></li>
         
             <li><a href="/blog.html" >
-                Itinerary
+                Logbook
             </a></li>
         
             <li><a href="/crew.html" >
                 Crew
             </a></li>
         
+            <li><a href="/suggestions.html" >
+                Suggestions
+            </a></li>
+        
     </ul>
 </nav>
-    <!-- <h1 style='margin-bottom: 5px'>MICHELLE + GEOFF'S ROAD TRIP 2019</h1> -->
-<div id="mapid">
-<aside class="toolbox" style="left: 24px;">
+    <!-- <h1 style='margin-bottom: 5px'>MICHELLE + GEOFF'S ROAD TRIP 2019</h1> --><div id="mapid">
+<aside class="toolbox" style="left: 24px; top: 55px">
     <div class="box">
         <header>
-            <h1>Michelle + Geoff's Road Trip 2019</h1>
+            <h1>Michelle + Geoff's Cross Country Road Trip 2019</h1>
         </header>
         <div>
             <p style='font-family: Nunito; text-align: justify; font-size: 12pt'>
-              Click on locations to see where our itinerary is taking us and read our logbook.
+              Click on locations to read about specific stops during our road trip.
               Have a suggestion of where we should go or just want to say hello?
-              Send us a message from the suggestions page; we'd love to hear from you!
+              Send us a message and subscribe to this blog from the <a href='/suggestions.html'>suggestions</a> page; we'd love to hear from you!
             </p>
           </div>
         <!-- Add legend data -->
@@ -88,12 +95,15 @@ var map = new mapboxgl.Map({
 const popup = new mapboxgl.Popup({
   className: "popups",
 	closeButton: false,
-  closeOnClick: false
+  closeOnClick: false,
+  anchor: 'left'
 });
 
 var url = '/map/map.geojson';
 var line = '/map/line.geojson';
-$.getJSON(url, function (geojson) {
+
+map.on('load', function(){
+  $.getJSON(url, function (geojson) {
 	const places = geojson;
 	const placesSource = new carto.source.GeoJSON(places);
 
@@ -104,14 +114,16 @@ $.getJSON(url, function (geojson) {
     @url: $url
     @place: $place
     @postdate: $date
+    @coordinates: $coordinates
     @imgUrl: $imgUrl
-    color: ramp(buckets($past_or_future, ['future','past']), [#dda61a,#464dce])
+    color: ramp(buckets($past_or_future, ['future','past']), [#ea0000,#00bc16])
 		width: 20
-		symbol: marker
+		symbol: image('car.svg')
 		strokeWidth: 3
     strokeColor: white
     
-	`);
+  `);
+ 
 	
 	const places_layer = new carto.Layer('places_layer', placesSource, viz);
 	
@@ -131,16 +143,17 @@ $.getJSON(url, function (geojson) {
           'line-dasharray': [3, 3],
         },
       });
-    })
-
+      hideLoader();
+    }
+    )
+  
   places_layer.on('loaded', function() {
-    hideLoader();
-    const symbol = places_layer.viz.symbol
     const colorLegend = places_layer.viz.color.getLegendData();
 
     let symbolLegendList = '';
 
     colorLegend.data.forEach((legend, index) => {
+      const symbol = places_layer.viz.symbol
       if (legend.key == 'CARTO_VL_OTHERS'){
         return;
       }
@@ -149,35 +162,52 @@ $.getJSON(url, function (geojson) {
         `
         <li>
             <span
-              class="image-mark"
-              style="
-                background-color: ${colorHex};
-                mask-image:url(${symbol.url});
-                -webkit-mask-image:url(${symbol.url})
-            "></span>
+                class="image-mark"
+                style="
+                  background-color: ${colorHex};
+                  mask-image:url('./car.svg');
+                  -webkit-mask-image:url('./car.svg');
+                  mask-size: cover;
+                  -webkit-mask-size: cover;
+              "></span>
             <span style="font-size: 12pt; font-family:'Nunito'">${legend.key}</span>
         </li>
       `
       });
       document.getElementById('content').innerHTML = symbolLegendList;
         
-      // initial popup!
-      popup.setHTML(`<div style='max-width: 300px'><h2><a href="/done/2019/02/06/firstpost.html">Making the blog in NYC</a></h2>
-                            <div class='small'>February 06 2019</div>
-                            <div style="text-align: center"><img style="width:75%;" src=http://localhost:4000/assets/images/nyc.jpg></div>
-                     <p style="text-align: justify; margin: 0"> This is my first post in the blog! I was really stoked to see that Katy Decorah had already come up with a method for using Jekyll to cook up a geojson file.
-
-<a href="/done/2019/02/06/firstpost.html">[read more]</a> </p> </div>       `
-                            );
-      popup.setLngLat([-73.985234,40.691411]);
-      popup.addTo(map);
 
       // fly to latest post.
       map.flyTo({
-      center: [-73.985234,40.691411],
+      center: [-124.6381, 48.09],
       zoom: 6,
-      speed: .2
+      speed: 1
       });
+      map.fire('flystart');
+
+
+    });
+  map.on('flystart', function(){
+  flying = true;
+    });
+    map.on('flyend', function(){
+        flying = false;
+    });
+
+   map.on('moveend', function(e){
+   if(flying){
+      // initial popup!
+      popup.setHTML(`<div style='max-width: 250px'><h2><a href="/done/2019/05/20/olympic.html">Olympic National Park</a></h2>
+                  <div class='small'>May 20 2019</div>
+                  <div style="text-align: center"><a href="/done/2019/05/20/olympic.html"><img style="width:100%;" src=http://localhost:4000/assets/images/olympic/sunset_rialto.jpg></a></div>
+            <p style="text-align: justify; margin: 0"> We decided to end our 3 month long road-trip with a multiday coastal backpacking trip in Olympic National Park. A final hurrah.
+
+<a href="/done/2019/05/20/olympic.html">[read more]</a> </p> </div>       `
+                  );
+      popup.setLngLat([-124.6381, 48.09]);
+      popup.addTo(map);
+      map.fire('flyend');
+      }
     });
 
 	const interactivity = new carto.Interactivity(places_layer);
@@ -224,22 +254,23 @@ $.getJSON(url, function (geojson) {
   interactivity.on('featureEnter', updatePopup);
 
 });
+})
 
 function updatePopup(event) {
       if (event.features.length > 0) {
         const vars = event.features[0].variables;
         if (vars.past_or_future.value == 'future'){
-          popup.setHTML(`<div style='max-width: 300px'><h2>${vars.place.value}</h2>
+          popup.setHTML(`<div style='max-width: 250px'><h2>${vars.place.value}</h2>
                             <div class='small'>${vars.postdate.value}</div>
                         </div>`);
         } else {
-        popup.setHTML(`<div style='max-width: 300px'><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
+        popup.setHTML(`<div style='max-width: 250px'><h2><a href="${vars.url.value}">${vars.title.value}</a></h2>
                             <div class='small'>${vars.postdate.value}</div>
-                            <div style="text-align: center"><img style="width:75%;" src="${vars.imgUrl.value}"></div>
+                            <div style="text-align: center"><a href="${vars.url.value}"><img style="width:100%;" src="${vars.imgUrl.value}"></a></div>
                             <p style="text-align: justify; margin: 0"> ${vars.excerpt.value} <a href="${vars.url.value}">[read more]</a></p> </div>`
                             );
         }
-        popup.setLngLat([event.coordinates.lng, event.coordinates.lat]);
+        popup.setLngLat([vars.coordinates.value.split(',')[0], vars.coordinates.value.split(',')[1]]);
         if (!popup.isOpen()) {
           popup.addTo(map);
         }

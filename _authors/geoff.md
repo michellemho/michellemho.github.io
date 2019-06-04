@@ -4,4 +4,4 @@ name: Geoff Woo
 position: Inventer, skier, climber, chef
 img: assets/images/geoff.jpg
 ---
-Geoff can't wait to go on this road-trip with the best girlfriend of all time.
+Geoff is a mechanical engineer specializing in product design. See his portfolio at [geoffwoo.com](geoffwoo.com).
