@@ -4,11 +4,11 @@ title: Itinerary
 ---
 <h1>Itinerary</h1>
 
-<ul>
+<ul style='text-align:center; padding:0px'>
     {% for post in site.posts reversed %}
     {% include future_stop.html post=post %}
     {% endfor %}  
     <p>...</p>
     <h2>Seattle, Washington</h2>
     <div class='small'>Arrived May 25th 2019!</div>
-  </ul>
+</ul>

@@ -1,5 +1,3 @@
 <h2><a href="{{ post.url }}">{{ post.place }}</a></h2>
 <div class='small'>{{ post.date | date: "%B %-d %Y" }}</div>
-{{ post.excerpt }}
-<a href="{{ post.url }}">[read more]</a>
-<p></p>
+<a href="{{ post.url }}"><img style="width:50%;" src='{{ site.url }}/{{ post.img }}'></a>
